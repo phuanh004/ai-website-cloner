@@ -21,9 +21,16 @@ export function DriveCTASection() {
             </div>
           </div>
 
-          {/* Right — image placeholder */}
+          {/* Right — video */}
           <div className="relative min-h-[240px] md:min-h-[320px]">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#2a2a2a] to-[#111]" />
+            <video
+              src="/videos/drive-cta.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-cover rounded-r-2xl"
+            />
           </div>
         </div>
       </div>

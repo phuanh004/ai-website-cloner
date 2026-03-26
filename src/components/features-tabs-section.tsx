@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -10,6 +11,7 @@ type Tab = (typeof tabs)[number];
 interface FeatureCard {
   title: string;
   description: string;
+  image: string;
 }
 
 const tabContent: Record<Tab, FeatureCard[]> = {
@@ -18,16 +20,19 @@ const tabContent: Record<Tab, FeatureCard[]> = {
       title: "Intuitive software",
       description:
         "From intuitive software to smart headlights that illuminate the road ahead — and even around corners — Rivian vehicles are packed with technology designed to enhance every drive.",
+      image: "/images/feature-tech-1.jpg",
     },
     {
       title: "Over-the-air updates",
       description:
         "Your Rivian gets better over time with regular over-the-air software updates that add new features, improve performance, and refine the driving experience.",
+      image: "/images/feature-tech-2.jpg",
     },
     {
       title: "Driver assistance",
       description:
         "Advanced driver-assistance features help you stay safe and comfortable on the highway and in stop-and-go traffic. Explore Driver+.",
+      image: "/images/feature-tech-3.jpg",
     },
   ],
   Performance: [
@@ -35,16 +40,19 @@ const tabContent: Record<Tab, FeatureCard[]> = {
       title: "Powerful and efficient",
       description:
         "Powerful, efficient, truly a joy to drive. With instant torque from dual motors and a low center of gravity, every Rivian delivers a thrilling driving experience.",
+      image: "/images/feature-tech-1.jpg",
     },
     {
       title: "All-wheel drive",
       description:
         "Standard all-wheel drive with independent motors means precise torque control for incredible traction and handling in any condition.",
+      image: "/images/feature-tech-2.jpg",
     },
     {
       title: "Range and efficiency",
       description:
         "Up to 420 miles of range with industry-leading efficiency, so you can go further on every charge. Explore range options.",
+      image: "/images/feature-tech-3.jpg",
     },
   ],
   Design: [
@@ -52,16 +60,19 @@ const tabContent: Record<Tab, FeatureCard[]> = {
       title: "Innovative storage",
       description:
         "From innovative storage (yes, there's a tunnel for gear in the truck) to a panoramic roof that lets the outside in, every detail is designed with purpose.",
+      image: "/images/feature-tech-1.jpg",
     },
     {
       title: "Premium interior",
       description:
         "Sustainable materials meet premium craftsmanship in a cabin designed for comfort on any adventure. Explore the interior.",
+      image: "/images/feature-tech-2.jpg",
     },
     {
       title: "Signature lighting",
       description:
         "The iconic stadium headlight design is instantly recognizable and provides exceptional illumination for any driving condition.",
+      image: "/images/feature-tech-3.jpg",
     },
   ],
 };
@@ -126,8 +137,14 @@ export function FeaturesTabsSection() {
                 }}
                 className="overflow-hidden rounded-2xl bg-[#e5e0ce]"
               >
-                {/* Placeholder image */}
-                <div className="h-[300px] bg-gradient-to-br from-blue-200 to-gray-300" />
+                {/* Feature image */}
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  width={800}
+                  height={500}
+                  style={{ width: "100%", height: "auto" }}
+                />
 
                 {/* Text content */}
                 <div className="p-6">

@@ -9,6 +9,7 @@ interface VehicleShowcaseProps {
   name: string;
   shadowSrc: string;
   baseSrc: string;
+  wheelsSrc: string;
   tagline: string;
   price: string;
   priceIsAmber?: boolean;
@@ -22,6 +23,7 @@ export function VehicleShowcase({
   name,
   shadowSrc,
   baseSrc,
+  wheelsSrc,
   tagline,
   price,
   priceIsAmber = false,
@@ -74,6 +76,16 @@ export function VehicleShowcase({
             aria-hidden="true"
             priority
           />
+          {/* Wheels layer — between shadow and base */}
+          <Image
+            src={wheelsSrc}
+            alt=""
+            width={1920}
+            height={339}
+            style={{ width: "100%", height: "auto" }}
+            className="absolute bottom-0 z-[1] object-contain"
+            aria-hidden="true"
+          />
           {/* Base vehicle image */}
           <Image
             src={baseSrc}
@@ -81,7 +93,7 @@ export function VehicleShowcase({
             width={1200}
             height={600}
             style={{ width: "100%", height: "auto" }}
-            className="relative object-contain"
+            className="relative z-[2] object-contain"
             priority
           />
         </div>
@@ -124,6 +136,7 @@ const vehicleData: VehicleShowcaseProps[] = [
     name: "R1S",
     shadowSrc: "/images/r1s-shadow.webp",
     baseSrc: "/images/r1s-base.webp",
+    wheelsSrc: "/images/r1s-wheels.webp",
     tagline: "All-electric, 7-seat SUV built for making memories.",
     price: "From $75,900. Est. $899/mo† | EPA est. range 415 mi*",
     exploreHref: "/r1s",
@@ -135,6 +148,7 @@ const vehicleData: VehicleShowcaseProps[] = [
     name: "R2",
     shadowSrc: "/images/r2-shadow.webp",
     baseSrc: "/images/r2-base.webp",
+    wheelsSrc: "/images/r2-wheels.webp",
     tagline:
       "Everything you need to get out there and say yes to new things.",
     price: "Available spring 2026",
@@ -148,6 +162,7 @@ const vehicleData: VehicleShowcaseProps[] = [
     name: "R1T",
     shadowSrc: "/images/r1t-shadow.webp",
     baseSrc: "/images/r1t-base.webp",
+    wheelsSrc: "/images/r1t-wheels.webp",
     tagline: "All-electric truck built for whatever you call a road.",
     price: "From $72,900. Est. $899/mo† | EPA est. range 420 mi*",
     exploreHref: "/r1t",

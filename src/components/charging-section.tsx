@@ -1,24 +1,39 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 
 const chargingFeatures = [
   {
     text: "Access to over 50,000 chargers — including Tesla Superchargers.",
+    image: "/images/charging-3.webp",
   },
   {
     text: "Built-in technology takes the guesswork out of trip planning.",
+    image: "/images/charging-4.webp",
   },
   {
     text: "With a Wall Charger at home, you'll always wake up ready to go.",
+    image: "/images/charging-5.webp",
   },
 ];
 
 export function ChargingSection() {
   return (
-    <section className="bg-black px-6 py-24">
-      <div className="mx-auto max-w-7xl">
+    <section className="relative overflow-hidden px-6 py-24">
+      {/* Background image */}
+      <Image
+        src="/images/charging-2.webp"
+        alt="Rivian charging station"
+        fill
+        sizes="100vw"
+        className="object-cover"
+        priority
+      />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/70" />
+      <div className="relative z-10 mx-auto max-w-7xl">
         {/* Top content */}
         <div className="mb-16">
           {/* Heading slides in from left */}
@@ -73,8 +88,16 @@ export function ChargingSection() {
               }}
               className="flex items-start gap-4"
             >
-              {/* Circular image placeholder */}
-              <div className="h-16 w-16 shrink-0 rounded-full bg-gray-700" />
+              {/* Circular feature image */}
+              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full">
+                <Image
+                  src={feature.image}
+                  alt=""
+                  width={64}
+                  height={64}
+                  className="rounded-full object-cover"
+                />
+              </div>
 
               {/* Text */}
               <p className="text-sm leading-relaxed text-white/70">

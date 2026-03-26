@@ -47,7 +47,7 @@ export function Header() {
           "fixed z-50 transition-all duration-300 ease-in-out",
           scrolled
             ? "top-4 left-4 right-4 mx-auto max-w-[1360px] rounded-2xl bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
-            : "inset-x-0 top-0 bg-transparent"
+            : "inset-x-0 top-[54px] bg-transparent"
         )}
       >
         <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-6 lg:px-10">

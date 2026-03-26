@@ -7,6 +7,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@/components/icons";
 
 interface Slide {
   image: string;
+  video?: string;
   imageAlt: string;
   heading: string;
   headingTag: "h1" | "h2";
@@ -19,6 +20,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     image: "/images/hero-r2-forest.jpg",
+    video: "/videos/hero-r2.mp4",
     imageAlt: "Rivian R2 driving through a forest",
     heading: "Meet R2",
     headingTag: "h1",
@@ -125,14 +127,25 @@ export function HeroCarousel() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7, ease: "easeInOut" }}
         >
-          <Image
-            src={slide.image}
-            alt={slide.imageAlt}
-            fill
-            style={{ objectFit: "cover" }}
-            priority={current === 0}
-            sizes="100vw"
-          />
+          {slide.video ? (
+            <video
+              src={slide.video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          ) : (
+            <Image
+              src={slide.image}
+              alt={slide.imageAlt}
+              fill
+              style={{ objectFit: "cover" }}
+              priority={current === 0}
+              sizes="100vw"
+            />
+          )}
         </motion.div>
       </AnimatePresence>
 
