@@ -4,6 +4,7 @@ import { VehicleShowcaseList } from "@/components/vehicle-showcase";
 import { FeaturesTabsSection } from "@/components/features-tabs-section";
 import { SafetySection } from "@/components/safety-section";
 import { ChargingSection } from "@/components/charging-section";
+import { ShowroomContactSection } from "@/components/showroom-contact-section";
 import { SoftwareSection } from "@/components/software-section";
 import { Footer } from "@/components/footer";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <FeaturesTabsSection />
         <SafetySection />
         <ChargingSection />
+        <ShowroomContactSection />
         <SoftwareSection />
       </main>
       <Footer />
