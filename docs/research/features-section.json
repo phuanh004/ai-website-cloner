@@ -1,0 +1,53 @@
+{
+  "classes": "h-full w-full overflow-hidden relative flex flex-col py-[7rem] lg:py-0 gap-[4rem]",
+  "rect": {
+    "top": 6851,
+    "height": 906
+  },
+  "styles": {
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "padding": "0px",
+    "display": "flex"
+  },
+  "heading": "Electric vehicles designed for adventure",
+  "tabButtons": [
+    {
+      "text": "Technology",
+      "isActive": true,
+      "styles": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "borderRadius": "40px",
+        "padding": "8px 16px",
+        "fontSize": "14px",
+        "fontWeight": "500"
+      }
+    },
+    {
+      "text": "Performance",
+      "isActive": true,
+      "styles": {
+        "backgroundColor": "rgb(0, 0, 0)",
+        "color": "rgb(255, 255, 255)",
+        "borderRadius": "40px",
+        "padding": "8px 16px",
+        "fontSize": "14px",
+        "fontWeight": "500"
+      }
+    },
+    {
+      "text": "Design",
+      "isActive": true,
+      "styles": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "borderRadius": "40px",
+        "padding": "8px 16px",
+        "fontSize": "14px",
+        "fontWeight": "500"
+      }
+    }
+  ],
+  "cards": [],
+  "allText": "Electric vehicles designed for adventureTechnologyPerformanceDesignFrom intuitive software to smart headlights to mobile app, Rivians are equipped with technology that helps make driving safer, easier and more fun.Explore the latestPowerful, efficient, truly a joy to drive. Built to go anywhere, on-road and off \u2014  with up to 9 drive modes that optimize for the terrain at the touch of a button.Explore R1S TriExplore R1T TriFrom innovative storage (yes, there\u2019s a tunnel for gear in the truck) to elevated interiors inspired by nature, every detail is dialed in.Explore R1SExplore R1T"
+}

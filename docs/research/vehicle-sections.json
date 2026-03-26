@@ -1,0 +1,1063 @@
+[
+  {
+    "sectionIndex": 0,
+    "classes": "h-[90svh] md:h-[85svh] min-h-[650px] w-full bg-stone-10",
+    "rect": {
+      "top": 0,
+      "height": 765
+    },
+    "styles": {
+      "backgroundColor": "rgb(236, 236, 236)",
+      "display": "block",
+      "padding": "0px",
+      "overflow": "visible",
+      "position": "static"
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Meet R2",
+        "styles": {
+          "fontSize": "120px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "112px",
+          "letterSpacing": "-3px",
+          "textTransform": "none"
+        }
+      },
+      {
+        "tag": "h2",
+        "text": "Select 2026 R1 starting at 1.99% APR\u00b9",
+        "styles": {
+          "fontSize": "56px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "60px",
+          "letterSpacing": "-2.5px",
+          "textTransform": "none"
+        }
+      },
+      {
+        "tag": "h2",
+        "text": "Save $3,000 on select R1 Dual leases\u00b2",
+        "styles": {
+          "fontSize": "56px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "60px",
+          "letterSpacing": "-2.5px",
+          "textTransform": "none"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "text": "Explore the lineup and reserve yours today.",
+        "styles": {
+          "fontSize": "36px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "40px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "Available for a limited time when you get an approved financing offer for 60 months by March 31.",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "20px",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "text": "Available when you lease a new2026 R1 Dual with Max battery and Performance Upgrade for 24 or 36 months.",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "20px",
+          "fontWeight": "500"
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "Reserve",
+        "href": "https://rivian.com/reserve/r2",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Explore",
+        "href": "https://rivian.com/r2",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "border": "0px none rgb(255, 255, 255)"
+        }
+      },
+      {
+        "text": "View offer",
+        "href": "https://rivian.com/offers/my-26-apr-offer-mar-20-31-2026",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Shop",
+        "href": "https://rivian.com/configurations/list?SORT=Featured&MODEL=R1S&INVENTORY_TYPE=NEW_VEHICLE_CONFIG&TRANSFER_FEE=ALL_MATCHES&BLD=BLD-TR1S%2CBLD-TDR1S%2CBLD-QR1S%2CBLD-DR1S",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "border": "0px none rgb(255, 255, 255)"
+        }
+      },
+      {
+        "text": "View offer",
+        "href": "https://rivian.com/offers/3000-lease-bonus-mar-20-31-2026",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Shop",
+        "href": "https://rivian.com/configurations/list?SORT=Featured&MODEL=R1S&INVENTORY_TYPE=NEW_VEHICLE_CONFIG&TRANSFER_FEE=ALL_MATCHES&BLD=BLD-DR1S&SWUP=SWUP-PERF01&BAT=BAT-A01%2CBAT-B01%2CBAT-LP01&MODEL_YEAR=2026",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "border": "0px none rgb(255, 255, 255)"
+        }
+      }
+    ],
+    "images": [
+      {
+        "src": "https://media.rivian.com/video/upload/so_0/g_auto/f_auto:image/q_auto/paoc8167kgw7junddybn?_a=BAVFB+DW0",
+        "alt": "Meet R2. Explore the lineup and reserve yours today.",
+        "naturalWidth": 1440,
+        "naturalHeight": 810
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/f_auto/q_auto/mobile2_250410-SinnaNasseri-NYC-Pantry-1089_v6_FINAL_1_r6jmco?_a=BAVFB+DW0",
+        "alt": "A white Rivian R1S electric SUV drives across a Bridge, showing that rugged capability looks just as good against a city skyline as it does on a mountain trail.",
+        "naturalWidth": 1440,
+        "naturalHeight": 800
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/f_auto/q_auto/mobile_PS_250617_LESLIE-HITTMEIER-MONTANA-SPRING-357-Final_1_1_k3lnbo?_a=BAVFB+DW0",
+        "alt": "An image of a black Rivian R1S electric SUV parked in a grassy field with rolling hills and mountains in the background",
+        "naturalWidth": 1440,
+        "naturalHeight": 800
+      }
+    ],
+    "allText": "Meet R2Explore the lineup and reserve yours today.ReserveExploreSelect 2026 R1 starting at 1.99% APR\u00b9Available for a limited time when you get an approved financing offer for 60 months by March 31.View offerShopSave $3,000 on select R1 Dual leases\u00b2Available when you lease a new2026 R1 Dual with Max battery and Performance Upgrade for 24 or 36 months.View offerShop"
+  },
+  {
+    "sectionIndex": 1,
+    "classes": "w-screen min-h-screen bg-stone-5 overflow-hidden",
+    "rect": {
+      "top": 765,
+      "height": 6086
+    },
+    "styles": {
+      "backgroundColor": "rgb(242, 242, 242)",
+      "display": "block",
+      "padding": "0px",
+      "overflow": "hidden",
+      "position": "static"
+    },
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "r1s",
+        "styles": {
+          "fontSize": "360px",
+          "fontWeight": "500",
+          "fontFamily": "Liga",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "360px",
+          "letterSpacing": "-8px",
+          "textTransform": "uppercase"
+        }
+      },
+      {
+        "tag": "h2",
+        "text": "r2",
+        "styles": {
+          "fontSize": "360px",
+          "fontWeight": "500",
+          "fontFamily": "Liga",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "360px",
+          "letterSpacing": "-8px",
+          "textTransform": "uppercase"
+        }
+      },
+      {
+        "tag": "h2",
+        "text": "r1t",
+        "styles": {
+          "fontSize": "360px",
+          "fontWeight": "500",
+          "fontFamily": "Liga",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "360px",
+          "letterSpacing": "-8px",
+          "textTransform": "uppercase"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "text": "All-electric, 7-seat SUV built for making memories.",
+        "styles": {
+          "fontSize": "24px",
+          "color": "rgb(21, 21, 21)",
+          "lineHeight": "28px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "From $76,990 \u00b7 Est. $899/mo\u00b3 | EPA est. range 410 mi\u2074",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "text": "Everything you need to get out there and say yes to new things.",
+        "styles": {
+          "fontSize": "24px",
+          "color": "rgb(21, 21, 21)",
+          "lineHeight": "28px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "Available spring 2026",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "text": "All-electric truck built for whatever you call a road.",
+        "styles": {
+          "fontSize": "24px",
+          "color": "rgb(21, 21, 21)",
+          "lineHeight": "28px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "From $72,990 \u00b7 Est. $899/mo\u00b3 | EPA est. range 420 mi\u2074",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "Explore",
+        "href": "https://rivian.com/r1s",
+        "styles": {
+          "backgroundColor": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(255, 255, 255)"
+        }
+      },
+      {
+        "text": "Buy",
+        "href": "https://rivian.com/configurations/builder?MODEL=R1S",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Explore",
+        "href": "https://rivian.com/r2",
+        "styles": {
+          "backgroundColor": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(255, 255, 255)"
+        }
+      },
+      {
+        "text": "Reserve",
+        "href": "https://rivian.com/reserve/r2",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Explore",
+        "href": "https://rivian.com/r1t",
+        "styles": {
+          "backgroundColor": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(255, 255, 255)"
+        }
+      },
+      {
+        "text": "Buy",
+        "href": "https://rivian.com/configurations/builder?MODEL=R1T",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      }
+    ],
+    "images": [
+      {
+        "src": "https://media.rivian.com/rivian-main/image/upload/f_auto/q_auto:eco/v1/rivian-com/home-page/vehicles/r1s_layers/shadow?_a=BAVFB+DW0",
+        "alt": "r1s shadow layer",
+        "naturalWidth": 3400,
+        "naturalHeight": 1200
+      },
+      {
+        "src": "https://media.rivian.com/rivian-main/image/upload/f_auto/q_auto:eco/v1/rivian-com/home-page/vehicles/r1s_layers/base?_a=BAVFB+DW0",
+        "alt": "r1s base layer",
+        "naturalWidth": 3400,
+        "naturalHeight": 1200
+      },
+      {
+        "src": "https://media.rivian.com/rivian-main/image/upload/f_auto/q_auto:eco/v1/rivian-com/home-page/vehicles/r2_layers/shadow?_a=BAVFB+DW0",
+        "alt": "r2 shadow layer",
+        "naturalWidth": 3400,
+        "naturalHeight": 1200
+      },
+      {
+        "src": "https://media.rivian.com/rivian-main/image/upload/f_auto/q_auto:eco/v1/rivian-com/home-page/vehicles/r2_layers/base?_a=BAVFB+DW0",
+        "alt": "r2 base layer",
+        "naturalWidth": 3400,
+        "naturalHeight": 1200
+      },
+      {
+        "src": "https://media.rivian.com/rivian-main/image/upload/f_auto/q_auto:eco/v1/rivian-com/home-page/vehicles/r1t_layers/shadow?_a=BAVFB+DW0",
+        "alt": "r1t shadow layer",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/rivian-main/image/upload/f_auto/q_auto:eco/v1/rivian-com/home-page/vehicles/r1t_layers/base?_a=BAVFB+DW0",
+        "alt": "r1t base layer",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      }
+    ],
+    "allText": "key\n            \n              key\n            \n              key\n            \n              key\n            \n              key\n            \n              key\n            \n        r1sAll-electric, 7-seat SUV built for making memories.From $76,990 \u00b7 Est. $899/mo\u00b3 | EPA est. range 410 mi\u2074ExploreBuyr2Everything you need to get out there and say yes to new things.Available spring 2026ExploreReserver1tAll-electric truck built for whatever you call a road.From $72,990 \u00b7 Est. $899/mo\u00b3 | EPA est. range 420 mi\u2074ExploreBuy"
+  },
+  {
+    "sectionIndex": 2,
+    "classes": "h-full w-full overflow-hidden relative flex flex-col py-[7rem] lg:py-0 gap-[4rem]",
+    "rect": {
+      "top": 6851,
+      "height": 906
+    },
+    "styles": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "display": "flex",
+      "padding": "0px",
+      "overflow": "hidden",
+      "position": "relative"
+    },
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "Electric vehicles designed for adventure",
+        "styles": {
+          "fontSize": "72px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "72px",
+          "letterSpacing": "-1.8px",
+          "textTransform": "none"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "text": "From intuitive software to smart headlights to mobile app, Rivians are equipped with technology that helps make driving safer, easier and more fun.",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "text": "Powerful, efficient, truly a joy to drive. Built to go anywhere, on-road and off \u2014  with up to 9 drive modes that optimize for the terrain at the touch of a button.",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "text": "From innovative storage (yes, there\u2019s a tunnel for gear in the truck) to elevated interiors inspired by nature, every detail is dialed in.",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "Explore the latest",
+        "href": "https://rivian.com/technology",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "20px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Explore R1S Tri",
+        "href": "https://rivian.com/r1s-tri",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "20px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Explore R1T Tri",
+        "href": "https://rivian.com/r1t-tri",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "20px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Explore R1S",
+        "href": "https://rivian.com/r1s",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "20px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Explore R1T",
+        "href": "https://rivian.com/r1t",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "20px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      }
+    ],
+    "images": [],
+    "allText": "Electric vehicles designed for adventureTechnologyPerformanceDesignFrom intuitive software to smart headlights to mobile app, Rivians are equipped with technology that helps make driving safer, easier and more fun.Explore the latestPowerful, efficient, truly a joy to drive. Built to go anywhere, on-road and off \u2014  with up to 9 drive modes that optimize for the terrain at the touch of a button.Explore R1S TriExplore R1T TriFrom innovative storage (yes, there\u2019s a tunnel for gear in the truck) to elevated interiors inspired by nature, every detail is dialed in.Explore R1SExplore R1T"
+  },
+  {
+    "sectionIndex": 3,
+    "classes": "relative overflow-hidden",
+    "rect": {
+      "top": 7757,
+      "height": 2752
+    },
+    "styles": {
+      "backgroundColor": "rgb(159, 161, 184)",
+      "display": "block",
+      "padding": "0px",
+      "overflow": "hidden",
+      "position": "relative"
+    },
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "Award-winning safety",
+        "styles": {
+          "fontSize": "72px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "72px",
+          "letterSpacing": "-1.8px",
+          "textTransform": "none"
+        }
+      },
+      {
+        "tag": "h2",
+        "text": "Seattle, WA",
+        "styles": {
+          "fontSize": "44px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "48px",
+          "letterSpacing": "-0.88px",
+          "textTransform": "none"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "text": "The R1S continues to earn awards for safety \u2014\u00a0most recently, a 2026 TOP SAFETY PICK+ from the IIHS for the 2026 R1S.",
+        "styles": {
+          "fontSize": "20px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "24px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "2617 NE 46th StreetSeattle, WA 98105",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "20px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "Mon\u2013Sat: 10:00am\u20138:00pmSun: 11:00am\u20136:00pm",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "20px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "Get behind",
+        "styles": {
+          "fontSize": "56px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "60px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "the wheel",
+        "styles": {
+          "fontSize": "56px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "60px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "",
+        "styles": {
+          "fontSize": "56px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "60px",
+          "fontWeight": "600"
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "Explore",
+        "href": "https://rivian.com/spaces/seattle",
+        "styles": {
+          "backgroundColor": "rgb(0, 0, 0)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "border": "0px none rgb(255, 255, 255)"
+        }
+      },
+      {
+        "text": "See all locations",
+        "href": "https://rivian.com/spaces/locations",
+        "styles": {
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "0px",
+          "padding": "0px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      },
+      {
+        "text": "Book a drive",
+        "href": "https://rivian.com/en-US/demo-drive/book?locationId=b5858376-310c-4342-a6e0-f6c50838bbd8",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "600",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      }
+    ],
+    "images": [
+      {
+        "src": "https://media.rivian.com/image/upload/f_auto/q_auto/v1/rivian-com/home%20page/safety_parallax_background?_a=BAVFB+DW0",
+        "alt": "Safety Background",
+        "naturalWidth": 1440,
+        "naturalHeight": 1440
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/f_auto/q_auto/v1/rivian-com/home%20page/safety_parallax_foreground?_a=BAVFB+DW0",
+        "alt": "Safety Foreground",
+        "naturalWidth": 1440,
+        "naturalHeight": 1440
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/f_svg/c_limit,w_117/v1774383710/rivian-com/home-page/2026_iihs_safety?_a=BAVFB+DW0",
+        "alt": "Safety pretitle image 1",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/Rivian-Seattle_STH-Web_Res_Anton_Benedikt-0002_V3_f1bjvj?_a=BAVFB+DW0",
+        "alt": "Outside of Rivian Seattle space",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/Rivian-Seattle_STH-Web_Res_Anton_Benedikt-0001_V3_seojqr?_a=BAVFB+DW0",
+        "alt": "Red R1T inside the Seattle Space",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/Rivian-Seattle_STH-Web_Res_Anton_Benedikt-0003_V3_ie1dfm?_a=BAVFB+DW0",
+        "alt": "Interior of the Seattle Rivian Space",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/Rivian-Seattle_STH-Web_Res_Anton_Benedikt-0005_V3_1_jjveeg?_a=BAVFB+DW0",
+        "alt": "Color samples for vehicles inside the Seattle, WA location",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/Rivian-Seattle_STH-Web_Res_Anton_Benedikt-0006_V3_vgvht1?_a=BAVFB+DW0",
+        "alt": "Interactive charging map at the Seattle, WA Rivian Space",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/Rivian-Seattle_2STH-Web_Res_Anton_Benedikt-0004_V3_yp3ife?_a=BAVFB+DW0",
+        "alt": "Gear shop inside in the Seattle, WA Rivian space",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/spaces_comekickthetires_a9fysh?_a=BAVFB+DW0",
+        "alt": "Rivian Spaces: electric vehicle tires",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/20230728_Grant-Harder_Vancouver-798_FINAL_rxxvku?_a=BAVFB+DW0",
+        "alt": "Get behind the wheel of a Rivian by taking a demo drive",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/spaces_exploreyouroptions_wt1gmh?_a=BAVFB+DW0",
+        "alt": "Explore Rivian's color and material options in person",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/spaces_expertguidance_e7pk0z?_a=BAVFB+DW0",
+        "alt": "Get expert guidance in our Rivian spaces",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/spaces_gearshop_grgjs3?_a=BAVFB+DW0",
+        "alt": "Shop a curated selection of Rivian gear and goods",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_630/f_auto/q_auto/quadspacesdetailgreen_oxm4ay?_a=BAVFB+DW0",
+        "alt": "Rivian Quad motor electric vehicle",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_fill/q_auto/w_630/g_auto:subject/dpr_2.0/f_auto/q_auto/test2_xnylbk?_a=BAVFB+DW0",
+        "alt": "Demo Drive Card Background",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      }
+    ],
+    "allText": "Award-winning safetyThe R1S continues to earn awards for safety \u2014\u00a0most recently, a 2026 TOP SAFETY PICK+ from the IIHS for the 2026 R1S.Seattle, WA2617 NE 46th StreetSeattle, WA 98105Mon\u2013Sat: 10:00am\u20138:00pmSun: 11:00am\u20136:00pmExploreSee all locationsGet behindthe wheelBook a drive"
+  },
+  {
+    "sectionIndex": 4,
+    "classes": "w-full h-full",
+    "rect": {
+      "top": 10509,
+      "height": 1824
+    },
+    "styles": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "padding": "0px",
+      "overflow": "visible",
+      "position": "static"
+    },
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "Ready for electric exploration",
+        "styles": {
+          "fontSize": "72px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "72px",
+          "letterSpacing": "-1.8px",
+          "textTransform": "none"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "text": "With up to 420 miles of range and a NACS charge port so you can charge in more places, Rivian makes it easy to get out and explore.",
+        "styles": {
+          "fontSize": "20px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "28px",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "text": "Access to over 50,000 chargers \u2014\u00a0including Tesla Superchargers.",
+        "styles": {
+          "fontSize": "24px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "28px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "Built-in technology takes the guesswork out of trip planning.",
+        "styles": {
+          "fontSize": "24px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "28px",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "text": "With a Wall Charger at home, you\u2019ll always wake up ready to go.",
+        "styles": {
+          "fontSize": "24px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "28px",
+          "fontWeight": "600"
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "Explore charging",
+        "href": "https://rivian.com/experience/charging",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 20px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      }
+    ],
+    "images": [
+      {
+        "src": "https://media.rivian.com/image/upload/f_auto/q_auto/v1/rivian-com/home%20page/charging_parallax_background_B?_a=BAVFB+DW0",
+        "alt": "Charging Background",
+        "naturalWidth": 1440,
+        "naturalHeight": 1440
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/f_auto/q_auto/v1/rivian-com/home%20page/charging_parallax_B?_a=BAVFB+DW0",
+        "alt": "Charging Foreground",
+        "naturalWidth": 1440,
+        "naturalHeight": 1440
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_416/f_auto/q_auto/v1/rivian-com/home%20page/access_to_chargers?_a=BAVFB+DW0",
+        "alt": "Charging Info 17PnP7tHnnO9r6jEkM16ai",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_416/f_auto/q_auto/v1/rivian-com/home%20page/charge_fast?_a=BAVFB+DW0",
+        "alt": "Charging Info 4GamcJkeTcYBVB3dYW2dK5",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      },
+      {
+        "src": "https://media.rivian.com/image/upload/c_scale/w_416/f_auto/q_auto/NACShomepage_yjvfub?_a=BAVFB+DW0",
+        "alt": "Charging Info 4U02tVmYkjqDUn7Xj8P7e7",
+        "naturalWidth": 0,
+        "naturalHeight": 0
+      }
+    ],
+    "allText": "Ready for electric explorationWith up to 420 miles of range and a NACS charge port so you can charge in more places, Rivian makes it easy to get out and explore.Explore chargingAccess to over 50,000 chargers \u2014\u00a0including Tesla Superchargers.Built-in technology takes the guesswork out of trip planning. With a Wall Charger at home, you\u2019ll always wake up ready to go."
+  },
+  {
+    "sectionIndex": 5,
+    "classes": "w-full bg-brand-black flex flex-col items-center",
+    "rect": {
+      "top": 12333,
+      "height": 1426
+    },
+    "styles": {
+      "backgroundColor": "rgb(0, 0, 0)",
+      "display": "flex",
+      "padding": "0px",
+      "overflow": "visible",
+      "position": "static"
+    },
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "Designed to get better with time",
+        "styles": {
+          "fontSize": "72px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "72px",
+          "letterSpacing": "-1.8px",
+          "textTransform": "none"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "text": "As software-defined vehicles, Rivians are designed to evolve. We can add new features with software updates  (just like a phone) so your vehicle actually improves over time.",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "links": [
+      {
+        "text": "Explore",
+        "href": "https://rivian.com/technology",
+        "styles": {
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgb(0, 0, 0)",
+          "borderRadius": "40px",
+          "padding": "8px 16px",
+          "fontSize": "16px",
+          "fontWeight": "500",
+          "border": "0px none rgb(0, 0, 0)"
+        }
+      }
+    ],
+    "images": [
+      {
+        "src": "https://media.rivian.com/video/upload/so_0/g_auto/f_auto:image/q_auto/v1/rivian-com/home%20page/l03h1erkl8ubq848y6ti?_a=BAVFB+DW0",
+        "alt": "Infotainment video",
+        "naturalWidth": 1440,
+        "naturalHeight": 1018
+      }
+    ],
+    "allText": "Designed to get better with timeAs software-defined vehicles, Rivians are designed to evolve. We can add new features with software updates  (just like a phone) so your vehicle actually improves over time.Explore"
+  },
+  {
+    "sectionIndex": 7,
+    "classes": "",
+    "rect": {
+      "top": 14741,
+      "height": 960
+    },
+    "styles": {
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "display": "block",
+      "padding": "0px",
+      "overflow": "visible",
+      "position": "static"
+    },
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "Keep the world adventurous forever",
+        "styles": {
+          "fontSize": "72px",
+          "fontWeight": "600",
+          "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "72px",
+          "letterSpacing": "-1.8px",
+          "textTransform": "none"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "text": "Everything we do is in service of building the future that our kids\u2019 kids' kids deserve and preserving the natural world for generations to come.",
+        "styles": {
+          "fontSize": "20px",
+          "color": "rgb(255, 255, 255)",
+          "lineHeight": "28px",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "links": [],
+    "images": [
+      {
+        "src": "https://media.rivian.com/image/upload/f_auto/q_auto/v1/rivian-com/home%20page/Forever-mobile-Image-02?_a=BAVFB+DW0",
+        "alt": "Forever Section Background",
+        "naturalWidth": 1440,
+        "naturalHeight": 961
+      },
+      {
+        "src": "https://images.ctfassets.net/2md5qhoeajym/zTkjg51G1jk1tFaG3Rh2Y/292838036b45a0c5b35060b8d871b7ac/Play.png",
+        "alt": "Play video",
+        "naturalWidth": 25,
+        "naturalHeight": 24
+      }
+    ],
+    "allText": "Keep the world adventurous foreverEverything we do is in service of building the future that our kids\u2019 kids' kids deserve and preserving the natural world for generations to come.Watch the video"
+  },
+  {
+    "sectionIndex": 8,
+    "classes": "px-medium-m1 pt-medium-m4 lg:px-large-l2 lg:pt-large-l2 text-brand-white",
+    "rect": {
+      "top": 15701,
+      "height": 1000
+    },
+    "styles": {
+      "backgroundColor": "rgb(33, 33, 33)",
+      "display": "block",
+      "padding": "80px 80px 0px",
+      "overflow": "visible",
+      "position": "static"
+    },
+    "headings": [],
+    "paragraphs": [
+      {
+        "text": "",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "text": "",
+        "styles": {
+          "fontSize": "16px",
+          "color": "rgb(0, 0, 0)",
+          "lineHeight": "24px",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "links": [],
+    "images": [],
+    "allText": "Financing offer available to U.S. residents on purchases of the following new 2026 R1T and R1S vehicle configurations:\u00a0 Dual Motor with Large Battery and Performance Upgrade, Dual Motor with Max battery and Performance Upgrade;\u00a0 and Tri Max.\u00a0 Vehicles must be ordered through R1 Shop with financing arranged through Rivian with approved lender, JPMorgan Chase Bank, NA. \u00a0Very-well qualified customers can receive as low as a 1.99% APR for 60 months with 60 monthly payments of $17.54 for every $1,000 financed.\u00a0 Offer subject to credit approval and vehicle availability. Not all applicants will quali"
+  }
+]

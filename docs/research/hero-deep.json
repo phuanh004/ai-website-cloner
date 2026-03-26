@@ -1,0 +1,100 @@
+{
+  "classes": "h-[90svh] md:h-[85svh] min-h-[650px] w-full bg-stone-10",
+  "rect": {
+    "height": 765,
+    "width": 1440
+  },
+  "styles": {
+    "position": "static",
+    "overflow": "visible",
+    "backgroundColor": "rgb(236, 236, 236)",
+    "height": "765px",
+    "display": "block"
+  },
+  "h1Text": "Meet R2",
+  "h2Text": "Select 2026 R1 starting at 1.99% APR\u00b9",
+  "subtitle": "Explore the lineup and reserve yours today.",
+  "buttons": [
+    {
+      "text": "",
+      "href": "",
+      "tag": "button",
+      "styles": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "borderRadius": "99px",
+        "padding": "0px",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "border": "0px none rgb(0, 0, 0)",
+        "minWidth": "40px",
+        "height": "40px"
+      }
+    },
+    {
+      "text": "",
+      "href": "",
+      "tag": "button",
+      "styles": {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "color": "rgb(0, 0, 0)",
+        "borderRadius": "99px",
+        "padding": "0px",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "border": "0px none rgb(0, 0, 0)",
+        "minWidth": "40px",
+        "height": "40px"
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "https://media.rivian.com/video/upload/so_0/g_auto/f_auto:image/q_auto/paoc8167kgw7junddybn?_a=BAVFB+DW0",
+      "alt": "Meet R2. Explore the lineup and reserve yours today.",
+      "width": 1440,
+      "height": 810,
+      "styles": {
+        "objectFit": "cover",
+        "position": "static",
+        "width": "1440px",
+        "height": "765px"
+      }
+    },
+    {
+      "src": "https://media.rivian.com/image/upload/f_auto/q_auto/mobile2_250410-SinnaNasseri-NYC-Pantry-1089_v6_FINAL_1_r6jmco?_a=BAVFB+DW0",
+      "alt": "A white Rivian R1S electric SUV drives across a Bridge, showing that rugged capability looks just as good against a city skyline as it does on a mountain trail.",
+      "width": 1440,
+      "height": 800,
+      "styles": {
+        "objectFit": "cover",
+        "position": "absolute",
+        "width": "1440px",
+        "height": "765px"
+      }
+    },
+    {
+      "src": "https://media.rivian.com/image/upload/f_auto/q_auto/mobile_PS_250617_LESLIE-HITTMEIER-MONTANA-SPRING-357-Final_1_1_k3lnbo?_a=BAVFB+DW0",
+      "alt": "An image of a black Rivian R1S electric SUV parked in a grassy field with rolling hills and mountains in the background",
+      "width": 1440,
+      "height": 800,
+      "styles": {
+        "objectFit": "cover",
+        "position": "absolute",
+        "width": "1440px",
+        "height": "765px"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://media.rivian.com/video/upload/c_limit,w_720/g_auto/f_auto:video/q_auto/paoc8167kgw7junddybn?_a=BAVFB+DW0",
+      "poster": "",
+      "autoplay": true,
+      "loop": true,
+      "muted": true
+    }
+  ],
+  "slideCount": 1,
+  "allText": "Meet R2Explore the lineup and reserve yours today.ReserveExploreSelect 2026 R1 starting at 1.99% APR\u00b9Available for a limited time when you get an approved financing offer for 60 months by March 31.View offerShopSave $3,000 on select R1 Dual leases\u00b2Available when you lease a new2026 R1 Dual with Max battery and Performance Upgrade for 24 or 36 months.View offerShop"
+}

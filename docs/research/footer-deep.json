@@ -1,0 +1,236 @@
+{
+  "classes": "rivian-css-pb3rv7",
+  "styles": {
+    "backgroundColor": "rgb(33, 33, 33)",
+    "color": "rgb(21, 21, 21)",
+    "padding": "0px",
+    "fontSize": "10px"
+  },
+  "columns": [
+    {
+      "heading": "",
+      "links": [
+        {
+          "text": "R1T",
+          "href": "https://rivian.com/r1t"
+        },
+        {
+          "text": "R1S",
+          "href": "https://rivian.com/r1s"
+        },
+        {
+          "text": "R2",
+          "href": "https://rivian.com/r2"
+        },
+        {
+          "text": "Fleet",
+          "href": "https://rivian.com/fleet"
+        },
+        {
+          "text": "Shop new inventory",
+          "href": "https://rivian.com/configurations/list"
+        },
+        {
+          "text": "Shop pre-owned",
+          "href": "https://rivian.com/configurations/list?INVENTORY_TYPE=PRE_OWNED_VEHICLE"
+        },
+        {
+          "text": "Spaces",
+          "href": "https://rivian.com/spaces"
+        },
+        {
+          "text": "Gear Shop",
+          "href": "https://rivian.com/gear-shop"
+        },
+        {
+          "text": "Our Company",
+          "href": "https://rivian.com/our-company"
+        },
+        {
+          "text": "Stories",
+          "href": "https://stories.rivian.com/"
+        },
+        {
+          "text": "Pre-Owned",
+          "href": "https://rivian.com/experience/pre-owned"
+        },
+        {
+          "text": "Purchasing",
+          "href": "https://rivian.com/experience/purchasing"
+        },
+        {
+          "text": "Charging",
+          "href": "https://rivian.com/experience/charging"
+        },
+        {
+          "text": "Insurance",
+          "href": "https://rivian.com/experience/insurance"
+        },
+        {
+          "text": "Service",
+          "href": "https://rivian.com/experience/service"
+        },
+        {
+          "text": "Investors",
+          "href": "https://rivian.com/investors"
+        },
+        {
+          "text": "Support",
+          "href": "https://rivian.com/support"
+        },
+        {
+          "text": "Terms",
+          "href": "https://rivian.com/legal/terms"
+        },
+        {
+          "text": "Privacy",
+          "href": "https://rivian.com/privacy"
+        },
+        {
+          "text": "Legal",
+          "href": "https://rivian.com/legal"
+        },
+        {
+          "text": "Recalls",
+          "href": "https://rivian.com/support/article/recall-information"
+        },
+        {
+          "text": "Accessibility",
+          "href": "https://rivian.com/accessibility"
+        },
+        {
+          "text": "Your privacy choices",
+          "href": ""
+        },
+        {
+          "text": "",
+          "href": "https://www.linkedin.com/company/rivian"
+        },
+        {
+          "text": "",
+          "href": "https://www.instagram.com/rivianofficial"
+        },
+        {
+          "text": "",
+          "href": "https://x.com/rivian"
+        },
+        {
+          "text": "",
+          "href": "https://www.youtube.com/channel/UCPMdVVKDEUrbp3nH46sTZmg"
+        }
+      ]
+    }
+  ],
+  "allLinks": [
+    {
+      "text": "R1T",
+      "href": "https://rivian.com/r1t"
+    },
+    {
+      "text": "R1S",
+      "href": "https://rivian.com/r1s"
+    },
+    {
+      "text": "R2",
+      "href": "https://rivian.com/r2"
+    },
+    {
+      "text": "Fleet",
+      "href": "https://rivian.com/fleet"
+    },
+    {
+      "text": "Shop new inventory",
+      "href": "https://rivian.com/configurations/list"
+    },
+    {
+      "text": "Shop pre-owned",
+      "href": "https://rivian.com/configurations/list?INVENTORY_TYPE=PRE_OWNED_VEHICLE"
+    },
+    {
+      "text": "Spaces",
+      "href": "https://rivian.com/spaces"
+    },
+    {
+      "text": "Gear Shop",
+      "href": "https://rivian.com/gear-shop"
+    },
+    {
+      "text": "Our Company",
+      "href": "https://rivian.com/our-company"
+    },
+    {
+      "text": "Stories",
+      "href": "https://stories.rivian.com/"
+    },
+    {
+      "text": "Pre-Owned",
+      "href": "https://rivian.com/experience/pre-owned"
+    },
+    {
+      "text": "Purchasing",
+      "href": "https://rivian.com/experience/purchasing"
+    },
+    {
+      "text": "Charging",
+      "href": "https://rivian.com/experience/charging"
+    },
+    {
+      "text": "Insurance",
+      "href": "https://rivian.com/experience/insurance"
+    },
+    {
+      "text": "Service",
+      "href": "https://rivian.com/experience/service"
+    },
+    {
+      "text": "Investors",
+      "href": "https://rivian.com/investors"
+    },
+    {
+      "text": "Support",
+      "href": "https://rivian.com/support"
+    },
+    {
+      "text": "Terms",
+      "href": "https://rivian.com/legal/terms"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://rivian.com/privacy"
+    },
+    {
+      "text": "Legal",
+      "href": "https://rivian.com/legal"
+    },
+    {
+      "text": "Recalls",
+      "href": "https://rivian.com/support/article/recall-information"
+    },
+    {
+      "text": "Accessibility",
+      "href": "https://rivian.com/accessibility"
+    },
+    {
+      "text": "Your privacy choices",
+      "href": ""
+    },
+    {
+      "text": "",
+      "href": "https://www.linkedin.com/company/rivian"
+    },
+    {
+      "text": "",
+      "href": "https://www.instagram.com/rivianofficial"
+    },
+    {
+      "text": "",
+      "href": "https://x.com/rivian"
+    },
+    {
+      "text": "",
+      "href": "https://www.youtube.com/channel/UCPMdVVKDEUrbp3nH46sTZmg"
+    }
+  ],
+  "allText": "R1TR1SR2FleetShop new inventoryShop pre-ownedSpacesGear ShopOur CompanyStoriesEducationPre-OwnedPurchasingChargingInsuranceServiceCompanyInvestorsResourcesSupportUS\u00a9 2026 Rivian. All Rights Reserved.TermsPrivacyLegalRecallsAccessibilityYour privacy choices",
+  "svgCount": 2
+}

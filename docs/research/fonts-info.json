@@ -1,0 +1,215 @@
+{
+  "fontFaces": [
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/7lwCDcju65UigB9HirCmLh/7273eb5dc032a541f3c63b32b49782a0/Adventure-Light.woff2\") format(\"woff2\")",
+      "weight": "300",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/1Dv0kej9t7tDsPaJlXKU1J/09735d831d661afd8335a2cf9d36310c/Adventure-Regular.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/2KUubGptkAVAoZuBkZ01i8/812892ff786ddbd3305d16883d5a200b/Adventure-SemiBold.woff2\") format(\"woff2\")",
+      "weight": "500",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/2KUubGptkAVAoZuBkZ01i8/8af6dfe3e22302422e0518934fc86679/Adventure-SemiBold.woff2\") format(\"woff2\")",
+      "weight": "600",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/1GZBTZWa4OkvJjUjmwgvhQ/67d662619d16ce12f75bcd7ca228538d/Adventure-Bold.woff2\") format(\"woff2\")",
+      "weight": "700",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Canela",
+      "src": "local(\"Canela\"), url(\"https://assets.rivian.com/2md5qhoeajym/2VyPWxvgm9D2fugOqQ0MB9/4898f176dad34d64220a57ac42c8cb0d/Canela-Regular.otf\") format(\"truetype\")",
+      "weight": "",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/Adventure-Light.woff2\")",
+      "weight": "300",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/Adventure-Regular.woff2\")",
+      "weight": "400",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/Adventure-SemiBold.woff2\")",
+      "weight": "600",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/Adventure-Bold.woff2\")",
+      "weight": "700",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "\"Adventure Mono\"",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/AdventureMono-Light.woff2\")",
+      "weight": "300",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "\"Adventure Mono\"",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/AdventureMono-Regular.woff2\")",
+      "weight": "400",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "\"Adventure Mono\"",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/AdventureMono-SemiBold.woff2\")",
+      "weight": "600",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "\"Adventure Mono\"",
+      "src": "url(\"https://media.rivian.com/raw/upload/bedrock-ui/fonts/AdventureMono-Bold.woff2\")",
+      "weight": "700",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/7lwCDcju65UigB9HirCmLh/7273eb5dc032a541f3c63b32b49782a0/Adventure-Light.woff2\") format(\"woff2\")",
+      "weight": "300",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/1Dv0kej9t7tDsPaJlXKU1J/09735d831d661afd8335a2cf9d36310c/Adventure-Regular.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/2KUubGptkAVAoZuBkZ01i8/8af6dfe3e22302422e0518934fc86679/Adventure-SemiBold.woff2\") format(\"woff2\")",
+      "weight": "500",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/2KUubGptkAVAoZuBkZ01i8/8af6dfe3e22302422e0518934fc86679/Adventure-SemiBold.woff2\") format(\"woff2\")",
+      "weight": "600",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/1GZBTZWa4OkvJjUjmwgvhQ/67d662619d16ce12f75bcd7ca228538d/Adventure-Bold.woff2\") format(\"woff2\")",
+      "weight": "700",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Liga",
+      "src": "local(\"Liga\"), url(\"https://assets.rivian.com/2md5qhoeajym/4ElQ3t2cYaZWJfYvh3AKYi/637a0877461fc76ac65842a2e58d4dbc/AdventureV1-Light.otf\")",
+      "weight": "300",
+      "style": "normal",
+      "display": "swap"
+    },
+    {
+      "family": "Liga",
+      "src": "local(\"Liga\"), url(\"https://assets.rivian.com/2md5qhoeajym/4LzEfmGSeWQppOcmiZuXlv/6445dc40baaa0706c8bb9603ec67e495/AdventureV1-Medium.otf\")",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap"
+    },
+    {
+      "family": "Liga",
+      "src": "local(\"Liga\"), url(\"https://assets.rivian.com/2md5qhoeajym/4L9ZvTcszLVQJHzRXsb03J/0953a15faa25ea3fd3d50339d59d5323/AdventureV1-Regular.otf\")",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap"
+    },
+    {
+      "family": "VideoJS",
+      "src": "url(\"data:application/font-woff;charset=utf-8;base64,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\") format(\"woff\")",
+      "weight": "400",
+      "style": "normal",
+      "display": ""
+    },
+    {
+      "family": "VideoJS",
+      "src": "url(\"data:application/font-woff;charset=utf-8;base64,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\") format(\"woff\")",
+      "weight": "",
+      "style": "",
+      "display": ""
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/7lwCDcju65UigB9HirCmLh/7273eb5dc032a541f3c63b32b49782a0/Adventure-Light.woff2\") format(\"woff2\")",
+      "weight": "300",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/1Dv0kej9t7tDsPaJlXKU1J/09735d831d661afd8335a2cf9d36310c/Adventure-Regular.woff2\") format(\"woff2\")",
+      "weight": "",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/2KUubGptkAVAoZuBkZ01i8/812892ff786ddbd3305d16883d5a200b/Adventure-SemiBold.woff2\") format(\"woff2\")",
+      "weight": "500",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/2KUubGptkAVAoZuBkZ01i8/8af6dfe3e22302422e0518934fc86679/Adventure-SemiBold.woff2\") format(\"woff2\")",
+      "weight": "600",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Adventure",
+      "src": "url(\"https://assets.rivian.com/2md5qhoeajym/1GZBTZWa4OkvJjUjmwgvhQ/67d662619d16ce12f75bcd7ca228538d/Adventure-Bold.woff2\") format(\"woff2\")",
+      "weight": "700",
+      "style": "",
+      "display": "swap"
+    },
+    {
+      "family": "Canela",
+      "src": "local(\"Canela\"), url(\"https://assets.rivian.com/2md5qhoeajym/2VyPWxvgm9D2fugOqQ0MB9/4898f176dad34d64220a57ac42c8cb0d/Canela-Regular.otf\") format(\"truetype\")",
+      "weight": "",
+      "style": "",
+      "display": "swap"
+    }
+  ],
+  "preloads": []
+}

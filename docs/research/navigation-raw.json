@@ -1,0 +1,81 @@
+{
+  "tag": "header",
+  "classes": "absolute inset-x-0 top-0 z-50 w-screen max-w-full bg-none font-body transition-transform duration-300 ease-in-out translate-y-0 [&&]:fixed",
+  "position": "fixed",
+  "bg": "rgba(0, 0, 0, 0)",
+  "height": 148,
+  "links": [
+    {
+      "text": "Get updates from Rivian",
+      "href": "https://rivian.com/connect/tell-us-more",
+      "classes": "cursor-pointer text-text-primary underline hover:no-underline active:no-underline"
+    },
+    {
+      "text": "R1S",
+      "href": "https://rivian.com/r1s",
+      "classes": "flex h-full w-full cursor-pointer items-center justify-center border-none px-medium-m2 no-underline "
+    },
+    {
+      "text": "R1T",
+      "href": "https://rivian.com/r1t",
+      "classes": "flex h-full w-full cursor-pointer items-center justify-center border-none px-medium-m2 no-underline "
+    },
+    {
+      "text": "R2",
+      "href": "https://rivian.com/r2",
+      "classes": "flex h-full w-full cursor-pointer items-center justify-center border-none px-medium-m2 no-underline "
+    },
+    {
+      "text": "R3",
+      "href": "https://rivian.com/r3",
+      "classes": "flex h-full w-full cursor-pointer items-center justify-center border-none px-medium-m2 no-underline "
+    },
+    {
+      "text": "Fleet",
+      "href": "https://rivian.com/fleet",
+      "classes": "flex h-full w-full cursor-pointer items-center justify-center border-none px-medium-m2 no-underline "
+    },
+    {
+      "text": "Rivian full brand logo in white text",
+      "href": "https://rivian.com/",
+      "classes": "flex items-center active"
+    },
+    {
+      "text": "Demo Drive",
+      "href": "https://rivian.com/demo-drive/book",
+      "classes": "flex h-full w-full cursor-pointer items-center justify-center border-none px-medium-m2 no-underline "
+    },
+    {
+      "text": "Sign In",
+      "href": "https://rivian.com/account",
+      "classes": "flex h-full w-full cursor-pointer items-center justify-center border-none px-medium-m2 no-underline "
+    },
+    {
+      "text": "Sign In",
+      "href": "https://rivian.com/account",
+      "classes": "cursor-pointer no-underline transition-all duration-300 ease-in lg:hover:bg-surface-secondary [&&]:t"
+    },
+    {
+      "text": "Rivian full brand logo in white text",
+      "href": "https://rivian.com/",
+      "classes": "flex items-center absolute transition-all duration-300 ease-in mt-[2px] opacity-100 active"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "classes": "flex h-[40px] w-[40px] cursor-pointer flex-col justify-center rounded-xxl border-none p-[10px] trans",
+      "ariaLabel": "hamburger"
+    },
+    {
+      "text": "",
+      "classes": "no-underline ease-in lg:hover:bg-surface-secondary [&&]:text-body100 bg-semantic-transparent text-te",
+      "ariaLabel": "hamburger"
+    },
+    {
+      "text": "",
+      "classes": "cursor-pointer justify-center border-none px-medium-m2 no-underline transition-all duration-300 ease",
+      "ariaLabel": "back"
+    }
+  ]
+}

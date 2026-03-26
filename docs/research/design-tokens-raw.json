@@ -1,0 +1,158 @@
+{
+  "fonts": [
+    "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+    "Liga",
+    "Sohne"
+  ],
+  "textColors": [
+    "rgb(21, 21, 21)",
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgb(0, 0, 238)",
+    "rgb(99, 99, 99)",
+    "rgb(184, 184, 184)",
+    "rgb(94, 94, 94)",
+    "rgb(128, 128, 128)"
+  ],
+  "bgColors": [
+    "rgb(255, 172, 0)",
+    "rgb(229, 224, 206)",
+    "rgb(255, 255, 255)",
+    "rgb(229, 229, 229)",
+    "rgb(236, 236, 236)",
+    "rgb(0, 0, 0)",
+    "rgb(203, 203, 203)",
+    "rgb(242, 242, 242)",
+    "rgb(139, 168, 189)",
+    "rgb(159, 161, 184)",
+    "rgba(236, 236, 236, 0.1)",
+    "rgb(98, 155, 92)",
+    "rgb(232, 72, 38)",
+    "rgb(119, 175, 216)",
+    "rgb(33, 33, 33)",
+    "rgb(240, 241, 240)",
+    "rgb(196, 196, 196)"
+  ],
+  "headings": {
+    "h1": {
+      "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+      "fontSize": "120px",
+      "fontWeight": "600",
+      "lineHeight": "112px",
+      "letterSpacing": "-3px",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "none"
+    },
+    "h2": {
+      "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+      "fontSize": "56px",
+      "fontWeight": "600",
+      "lineHeight": "60px",
+      "letterSpacing": "-2.5px",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "none"
+    },
+    "h3": {
+      "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+      "fontSize": "32px",
+      "fontWeight": "600",
+      "lineHeight": "36px",
+      "letterSpacing": "-0.68px",
+      "color": "rgb(0, 0, 0)",
+      "textTransform": "none"
+    }
+  },
+  "bodyText": {
+    "fontFamily": "Adventure, HelveticaNeue, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "16px",
+    "color": "rgb(0, 0, 0)"
+  },
+  "links": [
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon.png",
+      "sizes": ""
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-precomposed.png",
+      "sizes": ""
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-120x120-precomposed.png",
+      "sizes": "120x120"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-120x120.png",
+      "sizes": "120x120"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-152x152-precomposed.png",
+      "sizes": "152x152"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-152x152.png",
+      "sizes": "152x152"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-167x167-precomposed.png",
+      "sizes": "167x167"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-167x167.png",
+      "sizes": "167x167"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-180x180-precomposed.png",
+      "sizes": "180x180"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/apple-touch-icon-180x180.png",
+      "sizes": "180x180"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "https://rivian.com/favicon.ico",
+      "sizes": "64x64"
+    },
+    {
+      "rel": "shortcut icon",
+      "href": "https://rivian.com/favicon.ico",
+      "sizes": ""
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://rivian.com/.next-28e8d31726a54f7bcba8d314dca375fb83123140-2384390631/_next/static/css/fbf660290bb59f00.css",
+      "sizes": ""
+    }
+  ],
+  "metas": {
+    "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+    "description": "Discover Rivian's long-range electric vehicles, innovative EV trucks, SUVs and vans built for adventure. Join the movement towards a sustainable future.",
+    "keywords": "Rivian, Rivian R1T, electric pickup truck, electric SUV, Rivian R1S, R1S, R1T, automotive, electric vehicle, mobility, preorder, electric adventure, adventurous forever",
+    "og:title": "Rivian: Electric Vehicles Designed For Adventure",
+    "og:url": "https://rivian.com",
+    "og:image": "https://images.ctfassets.net/2md5qhoeajym/7exvHTtH5GeMd57ze80Pwz/46e43e75167b9ca5fd9bb7e343af6327/rivian-r1s-2025.png",
+    "og:type": "article",
+    "og:description": "Discover Rivian's long-range electric vehicles, innovative EV trucks, SUVs and vans built for adventure. Join the movement towards a sustainable future.",
+    "twitter:card": "summary_large_image",
+    "twitter:image": "https://images.ctfassets.net/2md5qhoeajym/7exvHTtH5GeMd57ze80Pwz/46e43e75167b9ca5fd9bb7e343af6327/rivian-r1s-2025.png",
+    "twitter:description": "Discover Rivian's long-range electric vehicles, innovative EV trucks, SUVs and vans built for adventure. Join the movement towards a sustainable future.",
+    "twitter:title": "Rivian: Electric Vehicles Designed For Adventure",
+    "twitter:creator": "@rivian",
+    "theme-color": "#000000",
+    "next-head-count": "30"
+  },
+  "title": "Rivian: Electric Vehicles Designed For Adventure"
+}
