@@ -31,6 +31,7 @@ export function SafetySection() {
             src="/images/safety-bg.webp"
             alt="Snowy mountain background"
             fill
+            sizes="100vw"
             className="object-cover object-center"
             priority
           />
@@ -45,7 +46,8 @@ export function SafetySection() {
           alt="IIHS Top Safety Pick+ badge"
           width={117}
           height={80}
-          className="mb-6 h-20 w-auto"
+          className="mb-6"
+          style={{ width: "auto", height: "auto" }}
           unoptimized
         />
 
@@ -71,6 +73,7 @@ export function SafetySection() {
             src="/images/safety-fg.webp"
             alt="Rivian R1S driving in snow"
             fill
+            sizes="100vw"
             className="object-cover object-bottom"
           />
         </div>

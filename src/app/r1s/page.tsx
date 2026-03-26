@@ -92,6 +92,7 @@ export default function R1SPage() {
               src="/images/hero-r1s-field.jpg"
               alt="R1S in the field"
               fill
+              sizes="100vw"
               className="object-cover opacity-60"
             />
           </div>

@@ -104,6 +104,7 @@ export default function R1TPage() {
                 src="/images/r1t-base.webp"
                 alt="R1T Gear Tunnel"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

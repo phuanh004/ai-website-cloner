@@ -57,6 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${adventure.variable} ${liga.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-adventure">{children}</body>

@@ -85,6 +85,7 @@ export default function R2Page() {
               src="/images/hero-r2-forest.jpg"
               alt="R2 in the forest"
               fill
+              sizes="100vw"
               className="object-cover opacity-60"
             />
           </div>

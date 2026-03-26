@@ -49,6 +49,7 @@ export default function OurCompanyPage() {
             src="/images/hero-r1s-bridge.jpg"
             alt="Rivian vehicle on a bridge in nature"
             fill
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/30" />
