@@ -19,6 +19,22 @@ interface Slide {
 
 const slides: Slide[] = [
   {
+    image: "/images/hero-r1s-field.jpg",
+    imageAlt: "Rivian R1S in an open field",
+    heading: "Save $3,000 on select R1 Dual leases\u00B2",
+    headingTag: "h2",
+    headingClassName:
+      "text-[32px] md:text-[44px] lg:text-[56px] font-semibold text-white tracking-[-2.5px] leading-tight max-w-4xl",
+    description:
+      "Available when you lease a new R1 Dual-Motor vehicle through our lending partners.",
+    descriptionClassName:
+      "text-[14px] md:text-[16px] font-medium text-white max-w-2xl",
+    buttons: [
+      { label: "Shop R1S", variant: "filled" },
+      { label: "Shop R1T", variant: "outlined" },
+    ],
+  },
+  {
     image: "/images/hero-r2-forest.jpg",
     video: "/videos/hero-r2.mp4",
     imageAlt: "Rivian R2 driving through a forest",
@@ -46,24 +62,8 @@ const slides: Slide[] = [
     descriptionClassName:
       "text-[14px] md:text-[16px] font-medium text-white max-w-2xl",
     buttons: [
-      { label: "Shop R1S", variant: "filled" },
-      { label: "Shop R1T", variant: "outlined" },
-    ],
-  },
-  {
-    image: "/images/hero-r1s-field.jpg",
-    imageAlt: "Rivian R1S in an open field",
-    heading: "Save $3,000 on select R1 Dual leases\u00B2",
-    headingTag: "h2",
-    headingClassName:
-      "text-[32px] md:text-[44px] lg:text-[56px] font-semibold text-white tracking-[-2.5px] leading-tight max-w-4xl",
-    description:
-      "Available when you lease a new R1 Dual-Motor vehicle through our lending partners.",
-    descriptionClassName:
-      "text-[14px] md:text-[16px] font-medium text-white max-w-2xl",
-    buttons: [
-      { label: "Shop R1S", variant: "filled" },
-      { label: "Shop R1T", variant: "outlined" },
+      { label: "View offer", variant: "filled" },
+      { label: "Shop", variant: "outlined" },
     ],
   },
 ];

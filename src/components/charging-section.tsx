@@ -21,90 +21,87 @@ const chargingFeatures = [
 
 export function ChargingSection() {
   return (
-    <section className="relative overflow-hidden px-6 py-24">
-      {/* Background image */}
-      <Image
-        src="/images/charging-2.webp"
-        alt="Rivian charging station"
-        fill
-        sizes="100vw"
-        className="object-cover"
-        priority
-      />
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/70" />
-      <div className="relative z-10 mx-auto max-w-7xl">
-        {/* Top content */}
-        <div className="mb-16">
-          {/* Heading slides in from left */}
-          <motion.h2
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className="mb-6 text-[56px] font-semibold leading-tight tracking-[-2.5px] text-white"
-          >
-            Ready for electric exploration
-          </motion.h2>
+    <section className="relative overflow-hidden bg-[#1a1a1a]">
+      {/* Top: charging station image with smooth gradient fade to dark */}
+      <div className="relative h-[75vh] min-h-[500px] w-full">
+        <Image
+          src="/images/charging-2.webp"
+          alt="Rivian charging station"
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
+        {/* Smooth gradient: transparent at top → dark at bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-40% to-[#1a1a1a]" />
+      </div>
 
-          <motion.p
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-            className="mb-8 max-w-[500px] text-base leading-relaxed text-white/70"
-          >
-            With up to 420 miles of range and a NACS charge port so you can
-            charge in more places, Rivian makes it easy to get out and explore.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <Link
-              href="/charging"
-              className="inline-block rounded-full border border-white bg-transparent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-white/10"
-            >
-              Explore charging
-            </Link>
-          </motion.div>
-        </div>
-
-        {/* Feature items — stagger in from bottom */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {chargingFeatures.map((feature, index) => (
-            <motion.div
-              key={feature.text}
+      {/* Text content — overlaps the bottom of the image */}
+      <div className="relative z-10 -mt-40 px-6 pb-20">
+        <div className="mx-auto max-w-7xl">
+          {/* Two-column layout: heading left, description + button right */}
+          <div className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-2 md:items-end">
+            <motion.h2
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{
-                duration: 0.5,
-                ease: "easeOut",
-                delay: index * 0.15,
-              }}
-              className="flex items-start gap-4"
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="text-[56px] md:text-[72px] font-semibold leading-[1.05] tracking-[-2.5px] text-white"
             >
-              {/* Circular feature image */}
-              <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full">
-                <Image
-                  src={feature.image}
-                  alt=""
-                  width={64}
-                  height={64}
-                  className="rounded-full object-cover"
-                />
-              </div>
+              Ready for electric
+              <br />
+              exploration
+            </motion.h2>
 
-              {/* Text */}
-              <p className="text-sm leading-relaxed text-white/70">
-                {feature.text}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+            >
+              <p className="mb-6 text-lg leading-relaxed text-white/80">
+                With up to 420 miles of range and a NACS charge port so you can
+                charge in more places, Rivian makes it easy to get out and explore.
               </p>
+              <Link
+                href="/charging"
+                className="inline-block rounded-full bg-white px-8 py-4 text-base font-medium text-black transition-opacity hover:opacity-90"
+              >
+                Explore charging
+              </Link>
             </motion.div>
-          ))}
+          </div>
+
+          {/* Feature cards — Apple-style tall cards */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {chargingFeatures.map((feature, index) => (
+              <motion.div
+                key={feature.text}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                  delay: index * 0.15,
+                }}
+                className="flex flex-col"
+              >
+                <div className="relative mb-6 aspect-[3/4] w-full overflow-hidden rounded-3xl">
+                  <Image
+                    src={feature.image}
+                    alt=""
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+                <p className="text-center text-lg font-semibold leading-snug text-white">
+                  {feature.text}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

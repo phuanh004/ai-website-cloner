@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -81,7 +82,7 @@ export function FeaturesTabsSection() {
   const [activeTab, setActiveTab] = useState<Tab>("Technology");
 
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50 px-6 py-24">
+    <section className="bg-gradient-to-b from-[#dce5e8] to-[#c8d5da] px-6 py-24">
       <div className="mx-auto max-w-7xl">
         {/* Heading — scroll-triggered fade-in */}
         <motion.h2
@@ -135,7 +136,7 @@ export function FeaturesTabsSection() {
                   ease: "easeOut",
                   delay: index * 0.1,
                 }}
-                className="overflow-hidden rounded-2xl bg-[#e5e0ce]"
+                className="overflow-hidden rounded-2xl bg-[#c8d5da]"
               >
                 {/* Feature image */}
                 <Image
@@ -159,6 +160,22 @@ export function FeaturesTabsSection() {
             ))}
           </motion.div>
         </AnimatePresence>
+
+        {/* Explore links */}
+        <div className="mt-12 flex justify-center gap-8">
+          <Link
+            href="/r1s"
+            className="text-sm font-medium text-black underline underline-offset-4 hover:text-black/70"
+          >
+            Explore R1S Tri
+          </Link>
+          <Link
+            href="/r1t"
+            className="text-sm font-medium text-black underline underline-offset-4 hover:text-black/70"
+          >
+            Explore R1T Tri
+          </Link>
+        </div>
       </div>
     </section>
   );

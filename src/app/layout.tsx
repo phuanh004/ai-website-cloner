@@ -6,10 +6,11 @@ const adventure = localFont({
   src: [
     { path: "../../public/fonts/Adventure-Light.woff2", weight: "300", style: "normal" },
     { path: "../../public/fonts/Adventure-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Adventure-SemiBold.woff2", weight: "500", style: "normal" },
     { path: "../../public/fonts/Adventure-SemiBold.woff2", weight: "600", style: "normal" },
     { path: "../../public/fonts/Adventure-Bold.woff2", weight: "700", style: "normal" },
   ],
-  variable: "--font-adventure",
+  variable: "--font-family-adventure",
   display: "swap",
 });
 
@@ -19,7 +20,7 @@ const liga = localFont({
     { path: "../../public/fonts/Liga-Regular.otf", weight: "400", style: "normal" },
     { path: "../../public/fonts/Liga-Medium.otf", weight: "500", style: "normal" },
   ],
-  variable: "--font-liga",
+  variable: "--font-family-liga",
   display: "swap",
 });
 

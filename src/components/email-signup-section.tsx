@@ -11,7 +11,7 @@ export function EmailSignupSection() {
   };
 
   return (
-    <section className="bg-[#c4c4c4] px-4 pb-8 lg:px-16 lg:pb-8">
+    <section className="bg-[#171717] px-4 pb-8 lg:px-16 lg:pb-8">
       <div className="mx-auto max-w-[1400px]">
         <div className="grid grid-cols-1 gap-8 rounded-2xl bg-black p-8 lg:grid-cols-2 lg:gap-12 lg:p-12">
           {/* Left — heading */}

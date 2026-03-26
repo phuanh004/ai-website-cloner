@@ -44,10 +44,9 @@ export function SafetySection() {
         <Image
           src="/images/iihs-badge.svg"
           alt="IIHS Top Safety Pick+ badge"
-          width={117}
-          height={80}
-          className="mb-6"
-          style={{ width: "auto", height: "auto" }}
+          width={90}
+          height={62}
+          className="mb-6 max-w-[90px]"
           unoptimized
         />
 

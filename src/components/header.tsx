@@ -15,11 +15,24 @@ const vehicleLinks = [
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     function handleScroll() {
-      setScrolled(window.scrollY > 50);
+      const currentY = window.scrollY;
+      setScrolled(currentY > 50);
+
+      // Show nav on scroll up, hide on scroll down (only after scrolling past hero)
+      if (currentY > 200) {
+        setHidden(currentY > lastScrollY);
+      } else {
+        setHidden(false);
+      }
+
+      lastScrollY = currentY;
     }
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -46,8 +59,9 @@ export function Header() {
         className={cn(
           "fixed z-50 transition-all duration-300 ease-in-out",
           scrolled
-            ? "top-4 left-4 right-4 mx-auto max-w-[1360px] rounded-2xl bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
-            : "inset-x-0 top-[54px] bg-transparent"
+            ? "left-4 right-4 mx-auto max-w-[1360px] rounded-2xl bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
+            : "inset-x-0 top-[54px] bg-transparent",
+          scrolled && !hidden ? "top-4" : scrolled && hidden ? "-top-24" : ""
         )}
       >
         <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-6 lg:px-10">

@@ -93,7 +93,9 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="w-full bg-[#212121] px-8 py-16 lg:px-16">
+    <footer className="relative w-full bg-[#212121] px-8 py-16 lg:px-16">
+      {/* Warm amber glow gradient at top to blend with software section lamp */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#7c4a1a]/20 via-[#4a2d10]/10 to-transparent" />
       {/* Logo */}
       <RivianLogo className="mb-8 text-white" />
 

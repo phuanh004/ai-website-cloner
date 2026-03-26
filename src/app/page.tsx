@@ -7,8 +7,8 @@ import { ChargingSection } from "@/components/charging-section";
 import { ShowroomContactSection } from "@/components/showroom-contact-section";
 import { DriveCTASection } from "@/components/drive-cta-section";
 import { QuickActionsSection } from "@/components/quick-actions-section";
-import { EmailSignupSection } from "@/components/email-signup-section";
 import { SoftwareSection } from "@/components/software-section";
+import { AdventureMissionSection } from "@/components/adventure-mission-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -20,12 +20,12 @@ export default function Home() {
         <VehicleShowcaseList />
         <FeaturesTabsSection />
         <SafetySection />
-        <ChargingSection />
         <ShowroomContactSection />
         <DriveCTASection />
-        <QuickActionsSection />
-        <EmailSignupSection />
+        <ChargingSection />
         <SoftwareSection />
+        <QuickActionsSection />
+        <AdventureMissionSection />
       </main>
       <Footer />
     </>
