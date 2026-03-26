@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "motion/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@/components/icons";
 
 interface Slide {
@@ -24,7 +25,8 @@ const slides: Slide[] = [
     headingClassName:
       "text-[60px] md:text-[90px] lg:text-[120px] font-semibold text-white tracking-[-3px] leading-[0.93]",
     description: "Explore the lineup and reserve yours today.",
-    descriptionClassName: "text-[20px] md:text-[28px] lg:text-[36px] font-semibold text-white leading-tight",
+    descriptionClassName:
+      "text-[20px] md:text-[28px] lg:text-[36px] font-semibold text-white leading-tight",
     buttons: [
       { label: "Reserve", variant: "filled" },
       { label: "Explore", variant: "outlined" },
@@ -39,7 +41,8 @@ const slides: Slide[] = [
       "text-[32px] md:text-[44px] lg:text-[56px] font-semibold text-white tracking-[-2.5px] leading-tight max-w-4xl",
     description:
       "Available for a limited time on select new R1 vehicles financed through our lending partners.",
-    descriptionClassName: "text-[14px] md:text-[16px] font-medium text-white max-w-2xl",
+    descriptionClassName:
+      "text-[14px] md:text-[16px] font-medium text-white max-w-2xl",
     buttons: [
       { label: "Shop R1S", variant: "filled" },
       { label: "Shop R1T", variant: "outlined" },
@@ -54,7 +57,8 @@ const slides: Slide[] = [
       "text-[32px] md:text-[44px] lg:text-[56px] font-semibold text-white tracking-[-2.5px] leading-tight max-w-4xl",
     description:
       "Available when you lease a new R1 Dual-Motor vehicle through our lending partners.",
-    descriptionClassName: "text-[14px] md:text-[16px] font-medium text-white max-w-2xl",
+    descriptionClassName:
+      "text-[14px] md:text-[16px] font-medium text-white max-w-2xl",
     buttons: [
       { label: "Shop R1S", variant: "filled" },
       { label: "Shop R1T", variant: "outlined" },
@@ -62,29 +66,48 @@ const slides: Slide[] = [
   },
 ];
 
+const fadeInUp = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+};
+
 export function HeroCarousel() {
   const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [direction, setDirection] = useState(1);
 
-  const goTo = useCallback((index: number) => {
-    setCurrent(((index % slides.length) + slides.length) % slides.length);
-  }, []);
+  const goTo = useCallback(
+    (index: number) => {
+      const next =
+        ((index % slides.length) + slides.length) % slides.length;
+      setDirection(next > current ? 1 : -1);
+      setCurrent(next);
+    },
+    [current]
+  );
 
   const next = useCallback(() => {
-    goTo(current + 1);
-  }, [current, goTo]);
+    setDirection(1);
+    setCurrent((prev) => (prev + 1) % slides.length);
+  }, []);
 
   const prev = useCallback(() => {
-    goTo(current - 1);
-  }, [current, goTo]);
+    setDirection(-1);
+    setCurrent(
+      (prev) => ((prev - 1) + slides.length) % slides.length
+    );
+  }, []);
 
   useEffect(() => {
     if (isPaused) return;
     const timer = setInterval(() => {
+      setDirection(1);
       setCurrent((prev) => (prev + 1) % slides.length);
     }, 6000);
     return () => clearInterval(timer);
   }, [isPaused]);
+
+  const slide = slides[current];
 
   return (
     <section
@@ -92,60 +115,96 @@ export function HeroCarousel() {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* Slides */}
-      {slides.map((slide, index) => (
-        <div
+      {/* Background images with AnimatePresence */}
+      <AnimatePresence mode="popLayout">
+        <motion.div
           key={slide.image}
-          className="absolute inset-0 transition-opacity duration-700 ease-in-out"
-          style={{ opacity: index === current ? 1 : 0 }}
-          aria-hidden={index !== current}
+          className="absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
         >
           <Image
             src={slide.image}
             alt={slide.imageAlt}
             fill
-            className="object-cover"
-            priority={index === 0}
+            style={{ objectFit: "cover" }}
+            priority={current === 0}
             sizes="100vw"
           />
+        </motion.div>
+      </AnimatePresence>
 
-          {/* Content overlay */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      {/* Dark gradient overlay for text readability */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/40 to-black/20" />
+
+      {/* Content overlay with animations — key resets animations on slide change */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={`content-${current}`}
+          className="absolute inset-0 z-[2] flex flex-col items-center justify-center text-center px-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          {/* Heading */}
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             {slide.headingTag === "h1" ? (
               <h1 className={slide.headingClassName}>{slide.heading}</h1>
             ) : (
               <h2 className={slide.headingClassName}>{slide.heading}</h2>
             )}
+          </motion.div>
 
-            <p className={`mt-4 ${slide.descriptionClassName}`}>
-              {slide.description}
-            </p>
+          {/* Subtitle */}
+          <motion.p
+            className={`mt-4 ${slide.descriptionClassName}`}
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+          >
+            {slide.description}
+          </motion.p>
 
-            <div className="mt-8 flex items-center gap-3">
-              {slide.buttons.map((btn) => (
-                <button
-                  key={btn.label}
-                  type="button"
-                  className={
-                    btn.variant === "filled"
-                      ? "rounded-full bg-white px-4 py-2 text-[14px] font-medium text-black transition-opacity hover:opacity-90"
-                      : "rounded-full border border-white px-4 py-2 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
-                  }
-                >
-                  {btn.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
+          {/* Buttons */}
+          <motion.div
+            className="mt-8 flex items-center gap-3"
+            variants={fadeInUp}
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+          >
+            {slide.buttons.map((btn) => (
+              <button
+                key={btn.label}
+                type="button"
+                className={
+                  btn.variant === "filled"
+                    ? "rounded-full bg-white px-4 py-2 text-[14px] font-medium text-black transition-opacity hover:opacity-90"
+                    : "rounded-full border border-white px-4 py-2 text-[14px] font-medium text-white transition-opacity hover:opacity-80"
+                }
+              >
+                {btn.label}
+              </button>
+            ))}
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
 
       {/* Left arrow */}
       <button
         type="button"
         onClick={prev}
         aria-label="Previous slide"
-        className="absolute left-4 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black transition-colors hover:bg-white"
+        className="absolute left-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black transition-colors hover:bg-white"
       >
         <ArrowLeftIcon className="h-5 w-5" />
       </button>
@@ -155,23 +214,23 @@ export function HeroCarousel() {
         type="button"
         onClick={next}
         aria-label="Next slide"
-        className="absolute right-4 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black transition-colors hover:bg-white"
+        className="absolute right-4 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-black transition-colors hover:bg-white"
       >
         <ArrowRightIcon className="h-5 w-5" />
       </button>
 
       {/* Dot indicators */}
-      <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2">
+      <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 items-center gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
             type="button"
             onClick={() => goTo(index)}
             aria-label={`Go to slide ${index + 1}`}
-            className={`h-2 rounded-full transition-all duration-300 ${
+            className={`rounded-full transition-all duration-300 ${
               index === current
-                ? "w-6 bg-white"
-                : "w-2 bg-white/60 hover:bg-white/80"
+                ? "h-2.5 w-8 bg-white"
+                : "h-2 w-2 bg-white/50 hover:bg-white/70"
             }`}
           />
         ))}

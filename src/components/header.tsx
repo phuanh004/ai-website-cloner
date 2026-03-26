@@ -15,6 +15,7 @@ const vehicleLinks = [
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -56,6 +57,7 @@ export function Header() {
             <button
               type="button"
               aria-label="Open menu"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={cn(
                 "flex h-10 w-10 items-center justify-center rounded-full transition-colors duration-300 lg:hidden",
                 scrolled
@@ -122,6 +124,78 @@ export function Header() {
           </div>
         </div>
       </nav>
+
+      {/* Mobile menu panel */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-[60] bg-white lg:hidden">
+          <div className="flex h-[72px] items-center justify-between px-6">
+            <button
+              type="button"
+              aria-label="Close menu"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-black"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+
+            <Link
+              href="/"
+              className="absolute left-1/2 -translate-x-1/2"
+              aria-label="Rivian home"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <RivianLogo className="h-[18px] w-auto text-black" />
+            </Link>
+
+            <div className="w-10" />
+          </div>
+
+          <nav className="px-6 pt-4">
+            <ul className="flex flex-col gap-1">
+              {vehicleLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block rounded-lg px-4 py-3 text-lg font-medium text-black transition-colors hover:bg-gray-100"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-6 border-t border-gray-200 pt-6">
+              <Link
+                href="/demo-drive/book"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block rounded-full bg-[#ffac00] px-6 py-3 text-center text-sm font-medium text-black transition-colors hover:bg-[#e69b00]"
+              >
+                Demo Drive
+              </Link>
+              <Link
+                href="/account"
+                onClick={() => setMobileMenuOpen(false)}
+                className="mt-3 block rounded-full border border-gray-300 px-6 py-3 text-center text-sm font-medium text-black transition-colors hover:bg-gray-100"
+              >
+                Sign In
+              </Link>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

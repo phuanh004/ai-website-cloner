@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "motion/react";
 
 const tabs = ["Technology", "Performance", "Design"] as const;
 type Tab = (typeof tabs)[number];
@@ -71,10 +72,16 @@ export function FeaturesTabsSection() {
   return (
     <section className="bg-gradient-to-b from-white to-gray-50 px-6 py-24">
       <div className="mx-auto max-w-7xl">
-        {/* Heading */}
-        <h2 className="mb-10 text-center text-[56px] font-semibold leading-tight tracking-[-2.5px] text-black">
+        {/* Heading — scroll-triggered fade-in */}
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="mb-10 text-center text-[56px] font-semibold leading-tight tracking-[-2.5px] text-black"
+        >
           Electric vehicles designed for adventure
-        </h2>
+        </motion.h2>
 
         {/* Tab selector */}
         <div className="mb-12 flex justify-center">
@@ -97,28 +104,44 @@ export function FeaturesTabsSection() {
           </div>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {tabContent[activeTab].map((card) => (
-            <div
-              key={card.title}
-              className="overflow-hidden rounded-2xl bg-[#e5e0ce]"
-            >
-              {/* Placeholder image */}
-              <div className="h-[300px] bg-gradient-to-br from-blue-200 to-gray-300" />
+        {/* Cards with AnimatePresence for tab transitions */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
+            className="grid grid-cols-1 gap-6 md:grid-cols-3"
+          >
+            {tabContent[activeTab].map((card, index) => (
+              <motion.div
+                key={card.title}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.4,
+                  ease: "easeOut",
+                  delay: index * 0.1,
+                }}
+                className="overflow-hidden rounded-2xl bg-[#e5e0ce]"
+              >
+                {/* Placeholder image */}
+                <div className="h-[300px] bg-gradient-to-br from-blue-200 to-gray-300" />
 
-              {/* Text content */}
-              <div className="p-6">
-                <h3 className="mb-2 text-lg font-semibold text-black">
-                  {card.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-black/70">
-                  {card.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+                {/* Text content */}
+                <div className="p-6">
+                  <h3 className="mb-2 text-lg font-semibold text-black">
+                    {card.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-black/70">
+                    {card.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );

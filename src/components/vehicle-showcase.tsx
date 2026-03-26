@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 interface VehicleShowcaseProps {
   name: string;
@@ -31,23 +34,34 @@ export function VehicleShowcase({
       className="flex flex-col items-center justify-center px-6 py-16 md:py-24"
       style={{ backgroundColor: bg }}
     >
-      {/* Giant vehicle name */}
-      <h2
+      {/* Giant vehicle name — fade in from below */}
+      <motion.h2
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         className="font-liga text-center font-medium leading-none tracking-[-0.02em] text-black"
         style={{ fontSize: "clamp(120px, 25vw, 360px)" }}
       >
         {name}
-      </h2>
+      </motion.h2>
 
-      {/* Vehicle image with shadow layer */}
-      <div className="relative flex w-[65%] items-center justify-center">
+      {/* Vehicle image with shadow layer — scale-up on scroll */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.92 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
+        className="relative flex w-[65%] items-center justify-center"
+      >
         {/* Shadow layer */}
         <Image
           src={shadowSrc}
           alt=""
           width={1200}
           height={600}
-          className="absolute top-2 w-full object-contain"
+          style={{ width: "100%", height: "auto" }}
+          className="absolute top-2 object-contain"
           aria-hidden="true"
           priority
         />
@@ -57,26 +71,43 @@ export function VehicleShowcase({
           alt={`Rivian ${name}`}
           width={1200}
           height={600}
-          className="relative w-full object-contain"
+          style={{ width: "100%", height: "auto" }}
+          className="relative object-contain"
           priority
         />
-      </div>
+      </motion.div>
 
-      {/* Description */}
-      <p className="mt-6 max-w-[500px] text-center text-xl font-normal text-rivian-dark">
+      {/* Description — stagger fade-in */}
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+        className="mt-6 max-w-[500px] text-center text-xl font-normal text-rivian-dark"
+      >
         {tagline}
-      </p>
+      </motion.p>
 
-      {/* Price line */}
-      <p
+      {/* Price line — stagger fade-in */}
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
         className="mt-2 text-center text-xs"
         style={{ color: priceIsAmber ? "#ffac00" : "#636363" }}
       >
         {price}
-      </p>
+      </motion.p>
 
-      {/* Buttons */}
-      <div className="mt-5 flex items-center gap-3">
+      {/* Buttons — stagger fade-in */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+        className="mt-5 flex items-center gap-3"
+      >
         <Link
           href={exploreHref}
           className="rounded-full bg-black px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
@@ -89,7 +120,7 @@ export function VehicleShowcase({
         >
           {ctaText}
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 }
