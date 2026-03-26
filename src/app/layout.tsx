@@ -1,20 +1,52 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const adventure = localFont({
+  src: [
+    { path: "../../public/fonts/Adventure-Light.woff2", weight: "300", style: "normal" },
+    { path: "../../public/fonts/Adventure-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Adventure-SemiBold.woff2", weight: "600", style: "normal" },
+    { path: "../../public/fonts/Adventure-Bold.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-adventure",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const liga = localFont({
+  src: [
+    { path: "../../public/fonts/Liga-Light.otf", weight: "300", style: "normal" },
+    { path: "../../public/fonts/Liga-Regular.otf", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Liga-Medium.otf", weight: "500", style: "normal" },
+  ],
+  variable: "--font-liga",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Rivian: Electric Vehicles Designed For Adventure",
+  description:
+    "Discover Rivian's long-range electric vehicles, innovative EV trucks, SUVs and vans built for adventure. Join the movement towards a sustainable future.",
+  keywords:
+    "Rivian, electric vehicle, R1T, R1S, R2, R3, electric truck, electric SUV, adventure",
+  openGraph: {
+    title: "Rivian: Electric Vehicles Designed For Adventure",
+    description:
+      "Discover Rivian's long-range electric vehicles, innovative EV trucks, SUVs and vans built for adventure.",
+    url: "https://rivian.com",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@rivian",
+  },
+  icons: {
+    icon: "/seo/favicon.ico",
+    apple: "/seo/apple-touch-icon.png",
+  },
+  other: {
+    "theme-color": "#000000",
+  },
 };
 
 export default function RootLayout({
@@ -25,9 +57,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${adventure.variable} ${liga.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col font-adventure">{children}</body>
     </html>
   );
 }
