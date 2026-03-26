@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 interface VehicleShowcaseProps {
   name: string;
@@ -29,98 +30,91 @@ export function VehicleShowcase({
   ctaHref,
   bg,
 }: VehicleShowcaseProps) {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+
+  // Text parallax — moves slower than scroll, slight upward drift
+  const textY = useTransform(scrollYProgress, [0, 1], ["0px", "-60px"]);
+  // Car parallax — slides in from right to left as user scrolls
+  const carX = useTransform(scrollYProgress, [0, 1], ["100px", "-100px"]);
+
   return (
     <section
-      className="flex flex-col items-center justify-center px-6 py-16 md:py-24"
+      ref={sectionRef}
+      className="relative overflow-hidden px-6 py-16 md:py-24"
       style={{ backgroundColor: bg }}
     >
-      {/* Giant vehicle name — fade in from below */}
-      <motion.h2
-        initial={{ opacity: 0, y: 60 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        className="font-liga text-center font-medium leading-none tracking-[-0.02em] text-black"
-        style={{ fontSize: "clamp(120px, 25vw, 360px)" }}
-      >
-        {name}
-      </motion.h2>
+      {/* Giant vehicle name — positioned behind car */}
+      <div className="relative z-0 flex justify-center">
+        <motion.h2
+          className="font-liga text-center font-medium leading-none tracking-[-0.02em] text-black"
+          style={{ fontSize: "clamp(120px, 25vw, 360px)", y: textY }}
+        >
+          {name}
+        </motion.h2>
+      </div>
 
-      {/* Vehicle image with shadow layer — scale-up on scroll */}
+      {/* Vehicle image — overlaps text with higher z-index */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.92 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
-        className="relative flex w-[65%] items-center justify-center"
+        style={{ x: carX }}
+        className="relative z-10 -mt-[15vw] flex justify-center"
       >
         {/* Shadow layer */}
-        <Image
-          src={shadowSrc}
-          alt=""
-          width={1200}
-          height={600}
-          style={{ width: "100%", height: "auto" }}
-          className="absolute top-2 object-contain"
-          aria-hidden="true"
-          priority
-        />
-        {/* Base vehicle image */}
-        <Image
-          src={baseSrc}
-          alt={`Rivian ${name}`}
-          width={1200}
-          height={600}
-          style={{ width: "100%", height: "auto" }}
-          className="relative object-contain"
-          priority
-        />
+        <div className="relative" style={{ width: "80%" }}>
+          <Image
+            src={shadowSrc}
+            alt=""
+            width={1200}
+            height={600}
+            style={{ width: "100%", height: "auto" }}
+            className="absolute top-2 object-contain"
+            aria-hidden="true"
+            priority
+          />
+          {/* Base vehicle image */}
+          <Image
+            src={baseSrc}
+            alt={`Rivian ${name}`}
+            width={1200}
+            height={600}
+            style={{ width: "100%", height: "auto" }}
+            className="relative object-contain"
+            priority
+          />
+        </div>
       </motion.div>
 
-      {/* Description — stagger fade-in */}
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-        className="mt-6 max-w-[500px] text-center text-xl font-normal text-rivian-dark"
-      >
-        {tagline}
-      </motion.p>
+      {/* Info below — tagline, price, buttons */}
+      <div className="relative z-20 mt-6 flex flex-col items-center">
+        <p className="max-w-[500px] text-center text-xl font-normal text-rivian-dark">
+          {tagline}
+        </p>
 
-      {/* Price line — stagger fade-in */}
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-        className="mt-2 text-center text-xs"
-        style={{ color: priceIsAmber ? "#ffac00" : "#636363" }}
-      >
-        {price}
-      </motion.p>
+        <p
+          className="mt-2 text-center text-xs"
+          style={{ color: priceIsAmber ? "#ffac00" : "#636363" }}
+        >
+          {price}
+        </p>
 
-      {/* Buttons — stagger fade-in */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
-        className="mt-5 flex items-center gap-3"
-      >
-        <Link
-          href={exploreHref}
-          className="rounded-full bg-black px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
-        >
-          Explore
-        </Link>
-        <Link
-          href={ctaHref}
-          className="rounded-full border border-black bg-transparent px-4 py-2 text-sm font-medium text-black transition-opacity hover:opacity-80"
-        >
-          {ctaText}
-        </Link>
-      </motion.div>
+        <div className="mt-5 flex items-center gap-3">
+          <Link
+            href={exploreHref}
+            className="rounded-full bg-black px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+          >
+            Explore
+          </Link>
+          <Link
+            href={ctaHref}
+            className="rounded-full border border-black bg-transparent px-4 py-2 text-sm font-medium text-black transition-opacity hover:opacity-80"
+          >
+            {ctaText}
+          </Link>
+        </div>
+      </div>
     </section>
   );
 }
@@ -131,7 +125,7 @@ const vehicleData: VehicleShowcaseProps[] = [
     shadowSrc: "/images/r1s-shadow.webp",
     baseSrc: "/images/r1s-base.webp",
     tagline: "All-electric, 7-seat SUV built for making memories.",
-    price: "From $75,900. Est. $899/mo\u2020 | EPA est. range 415 mi*",
+    price: "From $75,900. Est. $899/mo† | EPA est. range 415 mi*",
     exploreHref: "/r1s",
     ctaText: "Buy",
     ctaHref: "/configurations/r1s",
@@ -155,7 +149,7 @@ const vehicleData: VehicleShowcaseProps[] = [
     shadowSrc: "/images/r1t-shadow.webp",
     baseSrc: "/images/r1t-base.webp",
     tagline: "All-electric truck built for whatever you call a road.",
-    price: "From $72,900. Est. $899/mo\u2020 | EPA est. range 420 mi*",
+    price: "From $72,900. Est. $899/mo† | EPA est. range 420 mi*",
     exploreHref: "/r1t",
     ctaText: "Buy",
     ctaHref: "/configurations/r1t",

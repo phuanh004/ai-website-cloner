@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { ColorPicker } from "@/components/color-picker";
 
 const models = [
   {
@@ -25,14 +26,6 @@ const models = [
     price: "$45,000",
     image: "/images/r2-base.webp",
   },
-];
-
-const colors = [
-  { name: "Rivian Blue", value: "#4a6d8b" },
-  { name: "Forest Green", value: "#3d5a3e" },
-  { name: "Glacier White", value: "#e8e6e1" },
-  { name: "Midnight Black", value: "#1a1a1a" },
-  { name: "Canyon Red", value: "#8b3a2a" },
 ];
 
 export default async function ConfiguratorPage({
@@ -108,16 +101,7 @@ export default async function ConfiguratorPage({
           <h3 className="text-center text-sm uppercase tracking-widest text-rivian-gray-500 mb-4">
             Exterior color
           </h3>
-          <div className="flex justify-center gap-4">
-            {colors.map((color) => (
-              <button
-                key={color.name}
-                title={color.name}
-                className="h-10 w-10 rounded-full border-2 border-white/20 transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-rivian-amber focus:ring-offset-2 focus:ring-offset-rivian-black"
-                style={{ backgroundColor: color.value }}
-              />
-            ))}
-          </div>
+          <ColorPicker />
         </div>
 
         {/* Next button */}

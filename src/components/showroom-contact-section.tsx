@@ -13,15 +13,15 @@ function ShowroomCard() {
 
   return (
     <div className="overflow-hidden rounded-2xl bg-white">
-      {/* Image carousel */}
+      {/* Image carousel — full width, rounded top */}
       <div className="relative">
         <Image
           src={showroomImages[currentImage].src}
           alt={showroomImages[currentImage].alt}
           width={630}
           height={420}
-          style={{ width: "100%", height: "auto" }}
-          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="w-full rounded-t-2xl object-cover"
         />
         {/* Dot indicators */}
         <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
@@ -52,7 +52,7 @@ function ShowroomCard() {
           <p>Sun: 11:00am&ndash;6:00pm</p>
         </div>
         <div className="mt-5 flex items-center gap-4">
-          <button className="rounded-full bg-amber-500 px-6 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-amber-600">
+          <button className="rounded-full bg-black px-6 py-2.5 text-[14px] font-semibold text-white transition-colors hover:bg-black/85">
             Explore
           </button>
           <a
@@ -84,10 +84,10 @@ function ContactFormCard() {
   };
 
   const inputClassName =
-    "w-full rounded-lg border border-white/20 bg-transparent px-4 py-3 text-[14px] text-white placeholder:text-white/40 focus:border-white/50 focus:outline-none transition-colors";
+    "w-full rounded-xl border border-white/20 bg-transparent px-4 py-3 text-[14px] text-white placeholder:text-white/50 focus:border-white/50 focus:outline-none transition-colors";
 
   return (
-    <div className="flex h-full flex-col justify-center rounded-2xl bg-black p-8 lg:p-10">
+    <div className="flex h-full flex-col rounded-2xl bg-black px-8 pt-16 pb-8 lg:px-10 lg:pt-20 lg:pb-10">
       <h3 className="text-[32px] font-semibold text-white">
         Keep up with Rivian
       </h3>
@@ -126,7 +126,7 @@ function ContactFormCard() {
           onChange={(e) => handleChange("phone", e.target.value)}
           className={inputClassName}
         />
-        <p className="text-[12px] leading-relaxed text-white/60">
+        <p className="text-xs leading-relaxed text-white/50">
           By submitting this form, you agree to receive marketing communications
           from Rivian. You can unsubscribe at any time. See our{" "}
           <a href="#" className="underline">
@@ -140,7 +140,7 @@ function ContactFormCard() {
         </p>
         <button
           type="submit"
-          className="rounded-full bg-white px-6 py-3 text-[14px] font-semibold text-black transition-colors hover:bg-white/90"
+          className="w-fit rounded-full bg-white px-6 py-3 text-[14px] font-semibold text-black transition-colors hover:bg-white/90"
         >
           Submit
         </button>
@@ -151,8 +151,8 @@ function ContactFormCard() {
 
 export function ShowroomContactSection() {
   return (
-    <section className="bg-[#c4c4c4] px-6 py-8 lg:px-16">
-      <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-6 lg:grid-cols-2">
+    <section className="bg-[#c4c4c4] px-4 py-8 lg:px-16">
+      <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-4 lg:grid-cols-2">
         <ShowroomCard />
         <ContactFormCard />
       </div>
