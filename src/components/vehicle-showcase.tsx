@@ -185,10 +185,18 @@ function VehiclePanel({
   const introFraction = INTRO_VH / TOTAL_VH;
   const panelFraction = PER_PANEL_VH / TOTAL_VH;
 
+  // Vertical parallax intro: title slides down, car rises up (px-based for viewport consistency)
   const introTextY = useTransform(
     scrollYProgress,
-    [0, introFraction * 0.5, introFraction],
-    ["0%", "10%", "18%"]
+    [0, introFraction * 0.6, introFraction],
+    [-120, -40, -30]
+  );
+
+  // Car + info block rises from below into place during intro
+  const introContentY = useTransform(
+    scrollYProgress,
+    [0, introFraction],
+    [150, 0]
   );
 
   const isLast = index === PANEL_COUNT - 1;
@@ -196,15 +204,20 @@ function VehiclePanel({
   const panelEnd = panelStart + panelFraction;
 
   // Last panel doesn't exit — it stays centered
+  // Text exits earlier (starts at 30% into the panel instead of 50%)
+  const textExitStart = panelStart + panelFraction * 0.15;
+  const textExitEnd = panelStart + panelFraction * 0.65;
   const textExitX = useTransform(
     scrollYProgress,
-    [panelStart, panelEnd],
+    [textExitStart, textExitEnd],
     ["0%", isLast ? "0%" : "-130%"]
   );
 
+  const carExitStart = panelStart + panelFraction * 0.15;
+  const carExitEnd = panelStart + panelFraction * 0.65;
   const carExitX = useTransform(
     scrollYProgress,
-    [panelStart, panelEnd],
+    [carExitStart, carExitEnd],
     ["0%", isLast ? "0%" : "-20%"]
   );
 
@@ -224,16 +237,19 @@ function VehiclePanel({
         className="font-liga pointer-events-none absolute text-center font-medium leading-none tracking-[-0.02em] text-black"
         style={{
           fontSize: "clamp(150px, 30vw, 450px)",
-          top: "8%",
-          y: isFirst ? introTextY : undefined,
+          top: "2%",
+          y: isFirst ? introTextY : -60,
           x: textExitX,
         }}
       >
         {vehicle.name}
       </motion.h2>
 
-      {/* Vehicle image + info — justify-end to push content up from bottom */}
-      <div className="flex h-full flex-col items-center justify-end pb-[8vh]">
+      {/* Vehicle image + info */}
+      <motion.div
+        className="flex h-full flex-col items-center justify-end pb-[8vh]"
+        style={{ y: isFirst ? introContentY : undefined }}
+      >
         <motion.div
           className="relative flex w-full justify-center"
           style={{ maxWidth: "1440px", x: carExitX }}
@@ -299,7 +315,7 @@ function VehiclePanel({
             </Link>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }
