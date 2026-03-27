@@ -85,6 +85,7 @@ const PANEL_COUNT = vehicleData.length;
 const INTRO_VH = 2.5;
 const PER_PANEL_VH = 2;
 const TOTAL_VH = INTRO_VH + (PANEL_COUNT - 1) * PER_PANEL_VH + 0.5;
+const END_FRACTION = 1;
 
 /** Strip image native dimensions */
 const STRIP_W = 1920;
@@ -190,26 +191,28 @@ function VehiclePanel({
     ["0%", "10%", "18%"]
   );
 
+  const isLast = index === PANEL_COUNT - 1;
   const panelStart = introFraction + index * panelFraction;
   const panelEnd = panelStart + panelFraction;
 
+  // Last panel doesn't exit — it stays centered
   const textExitX = useTransform(
     scrollYProgress,
     [panelStart, panelEnd],
-    ["0%", "-130%"]
+    ["0%", isLast ? "0%" : "-130%"]
   );
 
   const carExitX = useTransform(
     scrollYProgress,
     [panelStart, panelEnd],
-    ["0%", "-20%"]
+    ["0%", isLast ? "0%" : "-20%"]
   );
 
-  // Wheel rotation across full scroll range
+  // Wheel rotation — stops when horizontal scroll ends
   const wheelRotation = useTransform(
     scrollYProgress,
-    [introFraction, 1],
-    [0, 360 * (PANEL_COUNT - 1) * 3]
+    [introFraction, END_FRACTION],
+    [0, -360 * (PANEL_COUNT - 1) * 3]
   );
 
   const isFirst = index === 0;
@@ -229,11 +232,11 @@ function VehiclePanel({
         {vehicle.name}
       </motion.h2>
 
-      {/* Vehicle image + info */}
-      <div className="flex flex-col items-center pt-[30vh]">
+      {/* Vehicle image + info — justify-end to push content up from bottom */}
+      <div className="flex h-full flex-col items-center justify-end pb-[8vh]">
         <motion.div
-          className="relative flex w-full justify-center px-4"
-          style={{ maxWidth: "1400px", x: carExitX }}
+          className="relative flex w-full justify-center"
+          style={{ maxWidth: "1440px", x: carExitX }}
         >
           <div className="relative w-full">
             {/* Shadow layer */}
@@ -312,7 +315,7 @@ export function VehicleShowcaseList() {
   const introFraction = INTRO_VH / TOTAL_VH;
   const x = useTransform(
     scrollYProgress,
-    [introFraction, 1],
+    [introFraction, END_FRACTION],
     ["0vw", `-${(PANEL_COUNT - 1) * 100}vw`]
   );
 
